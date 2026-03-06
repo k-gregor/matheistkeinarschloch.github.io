@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Lineare Unabhängigkeit"
-date:   2026-03-06 11:32:41 +0100
-categories: linalg
+layout: page
+title: Lineare Unabhängigkeit
+nav: true
+permalink: /lineare-unabhaengigkeit/
 ---
 
 <script type="text/javascript" id="MathJax-script" async
