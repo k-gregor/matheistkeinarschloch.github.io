@@ -30,7 +30,7 @@ Anschauliche Definition: Eine Gruppe von Vektoren ist linear unabhängig, wenn k
 In einem jeden dieser Vektoren muss also Information enthalten sein, die in den anderen nicht steht. Schauen wir uns mal folgende Visualisierung an (klicken und ziehen zum drehen, mit zwei Fingern scrollen zum rein- bzw rauszoomen):
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="/assets/graph3D-1.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/assets/graph3D-1.js" type="text/javascript"></script>
 <script type="text/javascript">
 var data = null;
 var graph = null;
