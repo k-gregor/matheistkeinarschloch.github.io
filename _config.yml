@@ -30,6 +30,17 @@ theme: minima
 plugins:
   - jekyll-feed
 
+header_pages:
+  - about.markdown
+
+navigation:
+  - title: About
+    url: /about/
+  - title: Lineare Algebra
+    subitems:
+      - title: Lineare Unabhängigkeit
+        url: /lineare-unabhaengigkeit/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
