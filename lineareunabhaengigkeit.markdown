@@ -47,7 +47,7 @@ function drawVisualization() {
     data.addRow([3, 1, 2]);
     data.addRow([-1, -2, 4]);
     data.addRow([4, -7, 4]);
-    var options = { xMin: -3, yMin: -3, zMin: 0, xMax: 3, yMax: 3, zMax: 5, width: "300px", height: "300px", style: "vectors", showPerspective: false, showGrid: true, keepAspectRatio: true, verticalRatio: 1.0 };
+    var options = { xMin: -3, yMin: -3, zMin: 0, xMax: 3, yMax: 3, zMax: 5, width: "300px", height: "300px", style: "vectors", showPerspective: false, showGrid: true, keepAspectRatio: true, verticalRatio: 1.0, zoomable: false };
     graph = new links.Graph3d(document.getElementById('mygraph'));
     graph.draw(data, options);
     graph.setCameraPosition(0.4, undefined, undefined);
