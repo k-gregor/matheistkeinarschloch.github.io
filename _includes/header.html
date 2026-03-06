@@ -6,33 +6,35 @@
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
-      <nav class="site-nav">
+<nav class="site-nav">
+  <ul>
 
+    {% for item in site.navigation %}
 
-  {% for item in site.navigation %}
-    <li class="dropdown">
-      {% if item.url %}
-      <a href="{{ item.url | relative_url }}">
-      {% endif %}
-      <span>{{ item.title }}</span>
-      {% if item.url %}
-      </a>
-      {% endif %}
-      <ul class="dropdown-content">
-        {% for subitem in item.subitems %}
+      {% if item.subitems %}
+      <li class="dropdown">
+        <span class="dropbtn">{{ item.title }} ▼</span>
+        <ul class="dropdown-content">
+          {% for subitem in item.subitems %}
           <li>
-            <a href="{{ subitem.url | relative_url }}">
-              {{ subitem.title }}
-            </a>
+            <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
           </li>
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
-  
-        
-      </nav>
+          {% endfor %}
+        </ul>
+      </li>
+
+      {% else %}
+      <li>
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      </li>
+      {% endif %}
+
+    {% endfor %}
+
+  </ul>
+</nav>
     {%- endif -%}
   </div>
 </header>
+
+{% include footer.html %}

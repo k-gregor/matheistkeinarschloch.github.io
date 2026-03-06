@@ -1,0 +1,30 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".dropdown > .dropbtn").forEach(function(button) {
+    button.addEventListener("click", function(e) {
+      e.preventDefault(); // prevent link if using <a>
+      let submenu = button.nextElementSibling;
+      if (!submenu) return;
+      // toggle submenu display
+      if (submenu.style.display === "block") {
+        submenu.style.display = "none";
+      } else {
+        // close other open submenus
+        document.querySelectorAll(".dropdown-content").forEach(function(ul){
+          ul.style.display = "none";
+        });
+        submenu.style.display = "block";
+      }
+    });
+  });
+
+  // close dropdowns if you click outside
+  document.addEventListener("click", function(e) {
+    if (!e.target.closest(".dropdown")) {
+      document.querySelectorAll(".dropdown-content").forEach(function(ul){
+        ul.style.display = "none";
+      });
+    }
+  });
+});
+</script>

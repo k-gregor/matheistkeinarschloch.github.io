@@ -30,17 +30,59 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages:
-  - about.markdown
-
 navigation:
-  - title: About
+  - title: Über diese Seite
     url: /about/
   - title: Lineare Algebra
     subitems:
+      - title: Gruppen, Ringe, Körper
+        url: /gruppen-ringe-koerper/
+      - title: Induktion (Beweismethode)
+        url: /induktion-beweismethode/
       - title: Lineare Unabhängigkeit
         url: /lineare-unabhaengigkeit/
-
+      - title: Eigenwerte und Eigenvektoren
+        url: /eigenwerte-eigenvektoren/
+      - title: Invertierbare Matrizen und ihre Eigenschaften
+        url: /invertierbare-matrizen-eigenschaften/
+      - title: Diagonalisierbarkeit von Matrizen
+        url: /diagonalisierbarkeit-matrix/
+  - title: Analysis
+    subitems:
+      - title: Folgen und Grenzwerte
+        url: /folgen-grenzwerte/
+      - title: Reihen - Grundlagen
+        url: /reihen-grundlagen/
+      - title: Reihen - Konvergenzkriterien und Beispiele
+        url: /reihen-konvergenzkriterien-und-beispiele/
+      - title: Die injektive/surjektive/bijektive Kneipenprügelei
+        url: /die-injektive-surjektive-bijektive-kneipenpruegelei/
+      - title: Monotonie
+        url: /monotonie/
+      - title: Stetigkeit
+        url: /stetigkeit/
+      - title: Taylor-Polynome
+        url: /taylor-polynome/
+      - title: Polarkoordinaten
+        url: /polarkoordinaten/
+      - title: Komplexe Zahlen - Grundlagen
+        url: /komplexe-zahlen-grundlagen/
+      - title: Mehrdimensionales Ableiten
+        url: /mehrdimensionales-ableiten/
+      - title: Mehrdimensionale Integration
+        url: /mehrdimensionale-integration/
+      - title: Mehrdimensionale Integrale - "Gegenbeispiel" zum Satz von Fubini
+        url: /mehrdimensionale-integrale-gegenbeispiel-zum-satz-von-fubini/
+      - title: Optimieren unter Nebenbedingungen (Lagrange)
+        url: /optimieren-unter-nebenbedingungen-lagrange/
+  - title: Statistik
+    subitems:
+      - title: Binomialtest
+        url: binomialtest
+      - title: Chi-Quadrat-Test
+        url: chi-quadrat-test
+      - title: T-Test (zwei Stichproben)
+        url: zwei-stichproben-t-test
 
 # Exclude from processing.
 # The following items will not be processed, by default.
