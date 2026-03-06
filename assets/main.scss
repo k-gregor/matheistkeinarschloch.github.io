@@ -14,6 +14,8 @@
   position: relative;
   display: inline-block;
   margin-right: 20px;
+  margin: 0px;               /* remove large vertical margin */
+  padding: 0px; 
 }
 
 /* Dropdown box */
@@ -23,17 +25,21 @@
   background: white;
   border: 1px solid #ddd;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   min-width: 250px;      /* wider so text doesn’t wrap */
-  z-index: 100;
+  z-index: 1000;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* optional nice shadow */
 }
-
+.site-nav .dropdown-content {
+  pointer-events: auto;      /* allow clicks/taps */
+  z-index: 1000;             /* make sure it’s above the graph */
+}
 /* Dropdown items */
 .dropdown-content li {
   display: block;
-  margin: 0;               /* remove large vertical margin */
+  margin: 0px;          
+  padding: 0px;
 }
 
 .dropdown-content li a {
@@ -42,6 +48,8 @@
   white-space: nowrap;      /* prevent line breaks */
   color: #333;
   text-decoration: none;
+  margin: 0px;          
+  padding: 0px;
 }
 
 .dropdown-content li a:hover {
@@ -59,22 +67,46 @@
   user-select: none;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .dropdown-content {
-    position: static;
-    display: none;
-    min-width: auto;
-  }
 
-  .dropdown.open > .dropdown-content {
-    display: block;
-  }
 
-  .site-nav li {
-    display: block;
-    margin-right: 0;
-  }
+
+.site-nav {
+  position: relative;      /* ensure z-index works */
+  z-index: 2000;           /* above the graph canvas */
 }
+
+.dropdown-content {
+  z-index: 2100;           /* higher than graph */
+  pointer-events: auto;    /* allow taps/clicks */
+  margin: 0px;          
+  padding: 0px;
+}
+
+ul {
+  margin: 0px;               /* remove large vertical margin */
+  padding: 0px; 
+}
+li {
+  margin: 0px;               /* remove large vertical margin */
+  padding: 0px; 
+}
+
+
+#dropdown-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2090; /* below dropdown but above graph */
+}
+
+#mygraph {
+  z-index: 0;
+  position: relative;
+  touch-action: pan-x pan-y; /* prevents zoom */
+}
+
+
 
 

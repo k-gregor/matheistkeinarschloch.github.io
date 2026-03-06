@@ -53,7 +53,11 @@ function drawVisualization() {
     graph.setCameraPosition(0.4, undefined, undefined);
 }
 </script>
-<div id="mygraph"></div>
+
+<div id="dropdown-overlay"></div>
+<div id="graph-container" style="width:100%; height:400px; overflow:hidden;">
+  <div id="mygraph"></div>
+</div>
 
 
 
