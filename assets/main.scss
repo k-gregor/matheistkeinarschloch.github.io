@@ -1,7 +1,9 @@
 ---
 ---
+
 @import "minima";
 
+/* Main nav adjustments */
 .site-nav ul {
   list-style: none;
   margin: 0;
@@ -14,6 +16,7 @@
   margin-right: 20px;
 }
 
+/* Dropdown box */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -22,15 +25,46 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  min-width: 200px;
+  min-width: 250px;      /* wider so text doesn’t wrap */
   z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* optional nice shadow */
 }
 
+/* Dropdown items */
 .dropdown-content li {
+  display: block;
+  margin: 0;               /* remove large vertical margin */
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 8px 16px;       /* controls spacing inside the item */
+  white-space: nowrap;      /* prevent line breaks */
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Optional: hover still works on desktop */
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* optional: hover works on desktop too */
-.dropdown:hover .dropdown-content {
+/* Make dropdown span clickable for JS toggle */
+.dropbtn {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Default: hidden */
+.dropdown-content {
+  display: none;
+}
+
+/* Show when .open class is present */
+.dropdown.open > .dropdown-content {
   display: block;
 }
