@@ -51,14 +51,18 @@ function drawVisualization() {
     graph = new links.Graph3d(document.getElementById('mygraph'));
     graph.draw(data, options);
     graph.setCameraPosition(0.4, undefined, undefined);
+    
+    graph._onTouchStart = (function(orig) {
+    return function(event) {
+    if (event.touches && event.touches.length > 1) return; // ignore multi-touch
+    orig.call(this, event);
+  };
+})(graph._onTouchStart);
+    
 }
 </script>
 
-<div id="dropdown-overlay"></div>
-<div id="graph-container" style="width:100%; height:400px; overflow:hidden;">
   <div id="mygraph"></div>
-</div>
-
 
 
 Zieht mal die Visualisierung so, dass ihr aus ungefähr der Richtung schaut, in die die blauen Vektoren zeigen. Ihr solltet im richtigen Winkel erkennen können, dass diese drei Vektoren in einer Ebene liegen! Das heißt, dass obwohl wir drei Vektoren in einem dreidimensionalen Raum haben, der dritte dieser Vektoren gar keine neue Richtung dazu bringt. Er bleibt in der Ebene der anderen beiden drin, hat also keine neue Richtungsinformation mehr, die nicht schon in den anderen beiden enthalten ist. Die blauen Vektoren sind also linear abhängig.
