@@ -59,12 +59,22 @@
   user-select: none;
 }
 
-/* Default: hidden */
-.dropdown-content {
-  display: none;
+/* Mobile */
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: static;
+    display: none;
+    min-width: auto;
+  }
+
+  .dropdown.open > .dropdown-content {
+    display: block;
+  }
+
+  .site-nav li {
+    display: block;
+    margin-right: 0;
+  }
 }
 
-/* Show when .open class is present */
-.dropdown.open > .dropdown-content {
-  display: block;
-}
+
