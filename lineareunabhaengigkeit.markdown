@@ -29,11 +29,11 @@ Die lineare Unabhängigkeit bereitet vielen Studenten Kopfzerbrechen. Was bedeut
 
 Anschauliche Definition: Eine Gruppe von Vektoren ist linear unabhängig, wenn keiner der Vektoren durch eine Linearkombination der anderen dargestellt werden kann.
 
-In einem jeden dieser Vektoren muss also Information enthalten sein, die in den anderen nicht steht. Schauen wir uns mal folgende Visualisierung an (klicken und ziehen zum drehen, scrollen zum rein- bzw rauszoomen):
+In einem jeden dieser Vektoren muss also Information enthalten sein, die in den anderen nicht steht. Schauen wir uns mal folgende Visualisierung an. Ihr könnt klicken und ziehen zum drehen, und scrollen zum rein- bzw rauszoomen. Falls ihr hier keine Visualisierung seht, bitte Javascript aktivieren, oder Blocker deaktivieren!
 
 
 
-<div id="plot3d" style="width:500px;height:500px;"></div>
+<div id="plot3d" style="width:500px; height:500px; text-align: center;"><b>Wenn ihr hier nichts seht, Javascript aktivieren oder Blocker deaktivieren.</b></div>
 
 
 <script>
