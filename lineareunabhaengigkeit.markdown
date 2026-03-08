@@ -17,52 +17,89 @@ permalink: /lineare-unabhaengigkeit/
   };
 </script>
 
-<script type="text/javascript" id="google" src="https://www.google.com/jsapi"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
 
 
 
 
 
-Die lineare Unabhängigkeit bereitet vielen Studenten Sorgen. Was bedeutet sie überhaupt?
+Die lineare Unabhängigkeit bereitet vielen Studenten Kopfzerbrechen. Was bedeutet sie überhaupt?
 
 Anschauliche Definition: Eine Gruppe von Vektoren ist linear unabhängig, wenn keiner der Vektoren durch eine Linearkombination der anderen dargestellt werden kann.
 
-In einem jeden dieser Vektoren muss also Information enthalten sein, die in den anderen nicht steht. Schauen wir uns mal folgende Visualisierung an (klicken und ziehen zum drehen, mit zwei Fingern scrollen zum rein- bzw rauszoomen):
+In einem jeden dieser Vektoren muss also Information enthalten sein, die in den anderen nicht steht. Schauen wir uns mal folgende Visualisierung an (klicken und ziehen zum drehen, scrollen zum rein- bzw rauszoomen):
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/graph3D-1.js" type="text/javascript"></script>
-<script type="text/javascript">
-var data = null;
-var graph = null;
-google.load("visualization", "1");
-google.setOnLoadCallback(drawVisualization);
-function drawVisualization() {
-    data = new google.visualization.DataTable();    
-    data.addColumn('number', 'x');
-    data.addColumn('number', 'y');
-    data.addColumn('number', 'z');
-    data.addRow([-1, 5, 3]);
-    data.addRow([5, 3, 1]);
-    data.addRow([1,2,1])
-    data.addRow([3, 1, 2]);
-    data.addRow([-1, -2, 4]);
-    data.addRow([4, -7, 4]);
-    var options = { xMin: -3, yMin: -3, zMin: 0, xMax: 3, yMax: 3, zMax: 5, width: "300px", height: "300px", style: "vectors", showPerspective: false, showGrid: true, keepAspectRatio: true, verticalRatio: 1.0, zoomable: false };
-    graph = new links.Graph3d(document.getElementById('mygraph'));
-    graph.draw(data, options);
-    graph.setCameraPosition(0.4, undefined, undefined);
-    
-    graph._onTouchStart = (function(orig) {
-    return function(event) {
-    if (event.touches && event.touches.length > 1) return; // ignore multi-touch
-    orig.call(this, event);
-  };
-})(graph._onTouchStart);
-    
+
+
+<div id="plot3d" style="width:500px;height:500px;"></div>
+
+
+<script>
+const container = document.getElementById("plot3d");
+
+// Scene
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xffffff);
+
+// Camera
+const camera = new THREE.PerspectiveCamera(
+  60,
+  container.clientWidth / container.clientHeight,
+  0.1,
+  1000
+);
+camera.position.set(10, 10, 10);
+camera.lookAt(0, 0, 0);
+
+// Renderer
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(container.clientWidth, container.clientHeight);
+container.appendChild(renderer.domElement);
+
+// Controls
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.enableDamping = false;
+
+// Axes
+scene.add(new THREE.AxesHelper(5));
+
+// Grid
+const grid = new THREE.GridHelper(10, 10, 0x000000, 0xcccccc);
+//grid.rotation.x = Math.PI / 2; // horizontal
+scene.add(grid);
+
+
+// three.js has z axis as second axis!
+const vectors = [
+  [-1,3,5],
+  [5,1,3],
+  [1,1,2],
+  [3,2,1],
+  [-1,4,-2],
+  [4,4,-7]
+];
+
+vectors.forEach((v,i) => {
+  const dir = new THREE.Vector3(v[0], v[1], v[2]);
+  const length = dir.length();
+  dir.normalize();
+  const color = (i >= 3) ? 0xff0000 : 0x0000ff;
+
+  const arrow = new THREE.ArrowHelper(dir, new THREE.Vector3(0,0,0), length, color, 0.5, 0.3);
+  scene.add(arrow);
+});
+
+// Render loop
+function animate() {
+  requestAnimationFrame(animate);
+  controls.update();
+  renderer.render(scene, camera);
 }
-</script>
 
-  <div id="mygraph"></div>
+animate();
+</script>
 
 
 Zieht mal die Visualisierung so, dass ihr aus ungefähr der Richtung schaut, in die die blauen Vektoren zeigen. Ihr solltet im richtigen Winkel erkennen können, dass diese drei Vektoren in einer Ebene liegen! Das heißt, dass obwohl wir drei Vektoren in einem dreidimensionalen Raum haben, der dritte dieser Vektoren gar keine neue Richtung dazu bringt. Er bleibt in der Ebene der anderen beiden drin, hat also keine neue Richtungsinformation mehr, die nicht schon in den anderen beiden enthalten ist. Die blauen Vektoren sind also linear abhängig.
