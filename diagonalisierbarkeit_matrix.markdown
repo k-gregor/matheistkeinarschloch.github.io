@@ -2,8 +2,22 @@
 layout: page
 title: Diagonalisierbarkeit von Matrizen
 nav: true
-permalink: /diagonalisierbarkeit-von-matrizen/
+permalink: /diagonalisierbarkeit-matrix/
 ---
+
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['$`', '`$'], ['\\(', '\\)']],
+      displayMath: [['```math', '```'], ['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
 
 # Diagonalisierbarkeit - Worum geht's?
 
@@ -13,28 +27,28 @@ $$ A = UDU^{-1}$$
 <h2>Diagonalisieren - Wozu das ganze?</h2>
 Diagonalmatrizen sind super praktisch, weil man mit ihnen so leicht rechnen kann. Da sie nur auf der Diagonalen Einträge haben, ist eine Matrixmultiplikation unglaublich einfach, weil wir nur die Diagonalelemente multiplizieren müssen:
 
-$$ \begin{pmatrix} 3 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; -1 \end{pmatrix} \cdot \begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; -6 &amp; 0 \\ 0 &amp; 0 &amp; -2 \end{pmatrix} = \begin{pmatrix} 6 &amp; 0 &amp; 0 \\ 0 &amp; -24 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix} $$
+$$ \begin{pmatrix} 3 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & -1 \end{pmatrix} \cdot \begin{pmatrix} 2 & 0 & 0 \\ 0 & -6 & 0 \\ 0 & 0 & -2 \end{pmatrix} = \begin{pmatrix} 6 & 0 & 0 \\ 0 & -24 & 0 \\ 0 & 0 & 2 \end{pmatrix} $$
 
 Auch die Inverse können wir damit total leicht bestimmen, indem wir die Kehrwerte auf der Diagonalen nehmen:
 
-$$ \begin{pmatrix} 3 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; -1 \end{pmatrix}\cdot \begin{pmatrix} \frac{1}{3} &amp; 0 &amp; 0 \\ 0 &amp; \frac{1}{4} &amp; 0 \\ 0 &amp; 0 &amp; -1 \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix} $$
+$$ \begin{pmatrix} 3 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & -1 \end{pmatrix}\cdot \begin{pmatrix} \frac{1}{3} & 0 & 0 \\ 0 & \frac{1}{4} & 0 \\ 0 & 0 & -1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} $$
 
 (An dieser Stelle sieht man, dass eine Diagonalmatrix nur dann invertierbar ist, wenn keine Null auf der Diagonalen steht)
 
 Wenn wir nun eine Potenz unserer Matrix $A$ berechnen wollen z.B. $A^5$, dann wäre das sehr umständlich. Wenn wir allerdings wissen, dass $ A = UDU^{-1}$, geht es ganz leicht:
 
-$$ \begin{align*} A^5 &amp;= (UDU^{-1})^5 = (UDU^{-1}) (UDU^{-1}) (UDU^{-1}) (UDU^{-1}) (UDU^{-1}) \\ &amp;= UD(U^{-1}U)D(U^{-1}U)D(U^{-1}U)D(U^{-1}U)DU^{-1} = UD^5U^{-1} \end{align*} $$
+$$ \begin{align*} A^5 &= (UDU^{-1})^5 = (UDU^{-1}) (UDU^{-1}) (UDU^{-1}) (UDU^{-1}) (UDU^{-1}) \\ &= UD(U^{-1}U)D(U^{-1}U)D(U^{-1}U)D(U^{-1}U)DU^{-1} = UD^5U^{-1} \end{align*} $$
 
 $D^5$ können wir ganz leicht bestimmen, und dann müssen wir nur noch zwei Matrixmultiplikationen machen anstatt 4.
 
 # Wie kann man eine Matrix diagonalisieren? Allgemeine Erklärung
-Wann kann man nun eine Matrix $A \in \mathbb{R}^n$ diagonalisieren? Wenn wir $n$ linear unabhängige Eigenvektoren finden! Wir erinnern uns, $v$ ist ein Eigenvektor zu $A$, wenn $Av = \lambda v$ für ein $\lambda \in \mathbb{R}$, ein so genannter Eigenwert. Wenn wir nun $n$ unabhängige Eigenvektoren $v_1, v_2, \ldots, v_n$ haben, können wir diese hintereinander zu einer Matrix $U$ schreiben, welche aufgrund der linearen Unabhängigkeit der Spalten invertierbar ist:
+Wann kann man nun eine Matrix $A \in \mathbb{R}^n$ diagonalisieren? Wenn wir $n$ [linear unabhängige]({% link lineare_unabhaengigkeit.markdown %}) Eigenvektoren finden! Wir erinnern uns, $v$ ist ein Eigenvektor zu $A$, wenn $Av = \lambda v$ für ein $\lambda \in \mathbb{R}$, ein so genannter Eigenwert (das kannst du im [Beitrag über Eigenwerte und -vektoren]({% link eigenwerte_eigenvektoren.markdown %}) nochmal nachlesen). Wenn wir nun $n$ unabhängige Eigenvektoren $v_1, v_2, \ldots, v_n$ haben, können wir diese hintereinander zu einer Matrix $U$ schreiben, welche aufgrund der linearen Unabhängigkeit der Spalten invertierbar ist:
 
-$$ U = \left( \begin{array}{c|c|c|c} v_1 &amp; v_2 &amp; \cdots &amp; v_n \end{array} \right) $$
+$$ U = \left( \begin{array}{c|c|c|c} v_1 & v_2 & \cdots & v_n \end{array} \right) $$
 
 Mit der Definition der Eigenvektoren (Gleichung *) ist dann:
 
-$$ \begin{align*} A\cdot U &amp;= A \cdot \left( \begin{array}{c|c|c|c} v_1 &amp; v_2 &amp; \cdots &amp; v_m \end{array} \right) = \left( \begin{array}{c|c|c|c} Av_1 &amp; Av_2 &amp; \cdots &amp; Av_n \end{array} \right) \\ &amp;\stackrel{*}{=} \left( \begin{array}{c|c|c|c} \lambda_1v_1 &amp; \lambda_2v_2 &amp; \cdots &amp; \lambda_nv_n \end{array} \right) = \left( \begin{array}{c|c|c|c} v_1 &amp; v_2 &amp; \cdots &amp; v_n \end{array} \right) \begin{pmatrix} \lambda_1 &amp; &amp; &amp; \\ &amp; \lambda_2 &amp; &amp; \\ &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; \lambda_n \end{pmatrix} \\ &amp;= U \cdot D \end{align*} $$
+$$ \begin{align*} A\cdot U &= A \cdot \left( \begin{array}{c|c|c|c} v_1 & v_2 & \cdots & v_m \end{array} \right) = \left( \begin{array}{c|c|c|c} Av_1 & Av_2 & \cdots & Av_n \end{array} \right) \\ &\stackrel{*}{=} \left( \begin{array}{c|c|c|c} \lambda_1v_1 & \lambda_2v_2 & \cdots & \lambda_nv_n \end{array} \right) = \left( \begin{array}{c|c|c|c} v_1 & v_2 & \cdots & v_n \end{array} \right) \begin{pmatrix} \lambda_1 & & & \\ & \lambda_2 & & \\ & & \ddots & \\ & & & \lambda_n \end{pmatrix} \\ &= U \cdot D \end{align*} $$
 
 Wem es nicht direkt klar ist, sollte nochmal kurz durchrechnen, dass es tatsächlich $U \cdot D$ ist, und nicht umgekehrt.
 
@@ -50,7 +64,7 @@ Wenn wir also eine Matrix $A$ diagonalisieren wollen - bzw. schauen, ob es über
 
 Gegeben sei die Matrix
 
-$$ A = \begin{pmatrix} 1 &amp; -2 &amp; -1 \\ -6 &amp; 2 &amp; -2 \\ 15 &amp; 6 &amp; 9 \end{pmatrix} $$
+$$ A = \begin{pmatrix} 1 & -2 & -1 \\ -6 & 2 & -2 \\ 15 & 6 & 9 \end{pmatrix} $$
 
 Wie in den Erklärungen zu Eigenwerten und -vektoren berechnet, sind die Eigenwerte:
 
@@ -62,11 +76,11 @@ $$ v_1 = \begin{pmatrix} -1 \\ -1 \\ 3 \end{pmatrix},~v_2 = \begin{pmatrix} -1 \
 
 Um die Diagonalierung vollständig zu machen, schreiben wir nun noch die tatsächliche Diagonalmatrix $D$ auf, bestehend aus den Eigenwerten:
 
-$$ D = \begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 6 \end{pmatrix} $$
+$$ D = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & 6 \end{pmatrix} $$
 
 Mit zugehöriger Transformationsmatrix $U$, bestehend aus den Eigenvektoren (in der richtigen Reihenfolge, passend zu den Eigenwerten!!!):
 
-$$ U = \left( \begin{array}{c|c|c} v_1 &amp; v_2 &amp; v_3 \end{array} \right) = \begin{pmatrix} -1 &amp; -1 &amp; 0 \\ -1 &amp; 0 &amp; -1 \\ 3 &amp; 3 &amp; 2 \end{pmatrix} $$
+$$ U = \left( \begin{array}{c|c|c} v_1 & v_2 & v_3 \end{array} \right) = \begin{pmatrix} -1 & -1 & 0 \\ -1 & 0 & -1 \\ 3 & 3 & 2 \end{pmatrix} $$
 
 Ihr könnt euch nochmal rechnerisch vergewissern, dass es stimmt, indem ihr zeigt, dass $A = UDU^{-1}$. Kleiner Tipp: zeigt einfach $AU = UD$, dann müsst ihr $U$ nicht invertieren ;-)
 
@@ -80,7 +94,7 @@ Ihr könnt euch nochmal rechnerisch vergewissern, dass es stimmt, indem ihr zeig
 
 Für die Matrix
 
-$$ A = \begin{pmatrix} -2 &amp;-4 &amp; 2 \\ -2 &amp; -4 &amp; -3 \\ 1 &amp; 2 &amp; -2 \end{pmatrix} $$
+$$ A = \begin{pmatrix} -2 &-4 & 2 \\ -2 & -4 & -3 \\ 1 & 2 & -2 \end{pmatrix} $$
 
 hatten wir auf der Erklärungsseite für Eigenwerte und -vektoren bereits berechnet, dass die Eigenwerte lauten: $\lambda_1 = 0$ mit geometrischer und arithmetischer Vielfachheit 1, und $\lambda_2 = -4$ mit arithmetischer Vielfachheit 2 aber geometrischer Vielfachheit 1. $A$ ist also nicht diagonalisierbar.
 <h2>Diagonalisierbarkeit heißt nicht gleich Invertierbarkeit!</h2>
@@ -88,20 +102,20 @@ Abschließend möchte ich noch zwei Beispiele bringen, die die Zusammengehörigk
 <h3>Diagonalisierbarkeit impliziert nicht Invertierbarkeit</h3>
 Auch wenn Diagonalisierbarkeit einer Matrix eine ziemlich starke Eigenschaft ist, muss die Matrix deshalb nicht invertierbar sein. Die folgende Matrix ist beispielsweise diagonalisierbar (denn sie ist bereits diagonal), ist aber nicht invertierbar, denn es steht eine Null auf der Diagonalen (also ist ein Eigenwert Null bzw die Determinante ist Null)
 
-$$ A = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix} $$
+$$ A = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix} $$
 <h3>Invertierbarkeit impliziert nicht Diagonalisierbarkeit</h3>
 Auch andersrum geht es nicht: Nehmen wir beispielsweise die Matrix
 
-$$ A = \begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix} $$
+$$ A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} $$
 
 die offenbar invertierbar ist, da ihre Determinante 1 ist. Damit sie diagonalisierbar ist, müssten die geometrischen Vielfachheiten der Eigenwerte gleich der algebraischen Vielfachheiten derselben sein. Das charakteristische Polynom ist:
 
-$$ det(\begin{pmatrix} 1-\lambda &amp; 1 \\ 0 &amp; 1-\lambda \end{pmatrix}) = (1-\lambda)(1-\lambda) \stackrel{!}{=}0 $$
+$$ det(\begin{pmatrix} 1-\lambda & 1 \\ 0 & 1-\lambda \end{pmatrix}) = (1-\lambda)(1-\lambda) \stackrel{!}{=}0 $$
 
 Es hat also die doppelte Nullstelle $\lambda_1 = \lambda_2 = 1$. Der einzige Eigenwert ist also 1 <strong>mit algebraischer Vielfachheit 2</strong>
 
 Schauen wir uns die geometrische Vielfachheit an:
 
-$$ (A-\lambda\mathbb{I})v = \begin{pmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}v \stackrel{!}{=} 0 $$
+$$ (A-\lambda\mathbb{I})v = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}v \stackrel{!}{=} 0 $$
 
 Das impliziert $v_2 = 0$. Wir finden also nur den Eigenvektor $v = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$. Die geometrische Vielfachheit von $\lambda_1$ ist also nur 1 und damit ungleich der geometrischen. $A$ ist also nicht diagonalisierbar.

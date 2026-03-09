@@ -33,7 +33,7 @@ In einem jeden dieser Vektoren muss also Information enthalten sein, die in den 
 
 
 
-<div id="plot3d" style="width:500px; height:500px; text-align: center;"><b>Wenn ihr hier nichts seht, Javascript aktivieren oder Blocker deaktivieren.</b></div>
+<div id="plot3d" style="width:500px; height:500px; text-align: center;"></div>
 
 
 <script>
