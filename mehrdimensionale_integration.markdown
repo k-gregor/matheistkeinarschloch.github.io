@@ -27,49 +27,75 @@ Wir wollen das Volumen der Funktion $f(x,y) = 6x + 4xy + 2y^2 +2 $ im Bereich $[
 Die folgende Grafik zeigt die Funktion und die Fläche über die wir integrieren wollen (falls ihr nichts seht, bitte Javascript aktivieren, oder Blocker deaktivieren!). Durch klicken und ziehen könnt ihr die Funktion aus verschiedenen Winkeln betrachten und durch Halten der Maus auf einen Gitterpunkt könnt ihr den Funktionswert an dieser Stelle angezeigt bekommen.
 
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
 
+<div id="mygraph" style="width:600px;height:500px;"></div>
 
-<div id="mygraph"></div>
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
 
 <script>
-  function customFunction(x, y) {
-    return (6*x + 4*x*y + 2*y*y + 2);
+function f(x,y){
+  return 6*x + 4*x*y + 2*y*y + 2;
+}
+
+var step = 0.25;
+
+var x = [];
+var y = [];
+var z = [];
+
+for (var xi = 0; xi <= 2; xi += step) x.push(xi);
+for (var yi = 0; yi <= 3.5; yi += step) y.push(yi);
+
+for (var i = 0; i < y.length; i++){
+  var row = [];
+  for (var j = 0; j < x.length; j++){
+    row.push(f(x[j], y[i]));
   }
+  z.push(row);
+}
 
-  // Surface data (full grid)
-  var surfaceData = [];
-  var axisMin = 0;
-  var axisMax = 3.5;
-  var axisStep = 0.25;
+var surface = {
+  type: "surface",
+  x: x,
+  y: y,
+  z: z,
+  hovertemplate: "x=%{x}<br>y=%{y}<br>z=%{z}<extra></extra>"
+};
 
-  for (var x = axisMin; x < 2; x += axisStep) {
-    for (var y = axisMin; y < axisMax; y += axisStep) {
-      surfaceData.push({x: x, y: y, z: customFunction(x, y)});
-    }
+
+
+// shaded rectangle
+var rect_x = [0,1];
+var rect_y = [0,3];
+var rect_z = [
+  [0,0],
+  [0,0]
+];
+
+var rectangle = {
+  type: "surface",
+  x: rect_x,
+  y: rect_y,
+  z: rect_z,
+  opacity:0.75,
+  showscale: false,
+  colorscale: [[0,"gray"],[1,"gray"]],
+  hoverinfo: "skip"
+};
+
+var layout = {
+  width: 600,
+  height: 500,
+  scene: {
+    xaxis: {title:"x", showspikes:false},
+    yaxis: {title:"y", showspikes:false},
+    zaxis: {title:"z", showspikes:false}
   }
+};
 
-  var surfaceDataset = new vis.DataSet(surfaceData);
-
-
-  // Graph options
-  var options = {
-    width: '500px',
-    height: '500px',
-    style: 'surface',      // for surface dataset
-    showPerspective: false,
-    showGrid: true,
-    keepAspectRatio: true,
-    verticalRatio: 0.5,
-    tooltip: true,
-    xStep: 0.5
-  };
-
-  // Draw surface
-  var graph = new vis.Graph3d(document.getElementById('mygraph'), surfaceDataset, options);
-
-
+Plotly.newPlot("mygraph", [surface, rectangle], layout, {
+  displayModeBar: false
+});
 </script>
 
 Wir können mal versuchen, das Volumen zwischen $f$ und der Fläche auf der x-y-Ebene abzuschätzen: Die Eckpunkte der Funktion über der Fläche sind (0,0,2), (0,3,20), (1,0,8) und (1,3,38). Die Grundfläche beträgt offensichtlich $3\cdot1 = 3$ und die Funktion ist über dieser Fläche gaaanz grob im Mittel so bei 15 würde ich sagen. Mal deutlich niedriger und mal deutlich höher, aber so ungefähr in diesem Bereich. Das Volumen unter $f$ müsste also in der Nähe von 45 liegen. (wie gesagt, das ist nur ganz grob. Wenn wir jetzt aber das Integral berechnen und 500 rauskommt, oder 2, dann wissen wir, dass da etwas nicht stimmen kann.
@@ -80,7 +106,7 @@ Die Berechnung von mehrdimensionalen Integralen ist kaum schwieriger als von nor
 
 $$
 \begin{align*}
-\int_0^3 \int_0^1 6x + 4xy + 2y^2 +2 dx~ dy &amp;= \int_0^3 ( \int_0^1 6x + 4xy + 2y^2 +2 dx ) ~dy \\ &amp;= \int_0^3 [ 3x^2 + 2x^2y + 2xy^2 + 2x ]_{x=0}^1 ~dy \\ &amp;= \int_0^3 3 + 2y + 2y^2 + 2 ~dy \\ &amp;= [5y + y^2 + \frac{2}{3}y^3]_{y=0}^3 = 42
+\int_0^3 \int_0^1 6x + 4xy + 2y^2 +2 dx~ dy &= \int_0^3 ( \int_0^1 6x + 4xy + 2y^2 +2 dx ) ~dy \\ &= \int_0^3 [ 3x^2 + 2x^2y + 2xy^2 + 2x ]_{x=0}^1 ~dy \\ &= \int_0^3 3 + 2y + 2y^2 + 2 ~dy \\ &= [5y + y^2 + \frac{2}{3}y^3]_{y=0}^3 = 42
 \end{align*}
 $$
 
@@ -133,7 +159,61 @@ $$
 
 In den meisten Fällen berechnen wir ein Volumenintegral über einer rechteckigen Grundfläche. Was aber, wenn wir Integrale über Dreiecken oder Trapezen berechnen wollen? Nehmen wir zum Beispiel folgendes Beispiel, selbe Funktion, aber Dreieck als Grundfläche:
 
-<div id="mygraph2" style="text-align: center;"><b>Wenn ihr hier nichts seht, Javascript aktivieren oder Blocker deaktivieren.</b></div>
+
+
+<div id="plot" style="width:800px;height:600px;"></div>
+
+<script>
+
+
+const n = 60;
+const xs = [];
+const ys = [];
+const zs = [];
+
+for (let i=0;i<=n;i++){
+  xs.push(i/n);
+  ys.push(i/n);
+}
+
+for (let i=0;i<=n;i++){
+  const row=[];
+  for (let j=0;j<=n;j++){
+    row.push(f(xs[j],ys[i]));
+  }
+  zs.push(row);
+}
+
+const surface2 = {
+  type:'surface',
+  x:xs,
+  y:ys,
+  z:zs,
+  colorscale:'Viridis',
+  opacity:0.75,
+  hoverinfo:'x+y+z'
+};
+
+const triangle2 = {
+  type:'mesh3d',
+  x:[0,1,0],
+  y:[0,0,1],
+  z:[0,0,0],
+  i:[0],
+  j:[1],
+  k:[2],
+  color:'gray',
+  opacity:0.75,
+  hoverinfo:'skip'
+};
+
+
+Plotly.newPlot('plot',[surface2,triangle2],layout);
+
+</script>
+
+
+
 
 
 Wie können wir diese Grundfläche beschreiben und darüber integrieren? Die Idee ist, eine Variable "normal laufen zu lassen", und die andere Variable anhand der ersten zu beschreiben. Wie sieht das hier aus? Wir lassen zum Beispiel y ganz normal von 0 bis 1 laufen. Wie muss sich dann x verhalten? Naja, wir sehen, wenn wir das Dreieck von oben betrachten, dass die Hypothenuse einfach eine lineare Funktion ist, und zwar: y=1-x! Wenn wir das nach x umformen haben wir also x = 1-y. Während y also von 0 bis 1 geht, geht x von 0 bis 1-y. (Probiert anhand einiger Punkte in der x-y-Ebene aus, dass das stimmt!). Diese Werte setzen wir also als Integralsgrenzen und rechnen das Integral "ganz normal" aus, wobei diesmal tatsächlich auch die Grenze von einer Variable abhängt. Das darf einen aber nicht verwirren, man setzt (1-y) dann ganz einfach als obere Grenze ein (Schritt (*) ) und rechnet weiter. Wir erhalten dann:
@@ -142,15 +222,52 @@ $$ \begin{align*}
 \int_0^1 \int_0^{1-y} 6x+4xy+2y^2+2~dx~dy &= \int_0^1 [3x^2 + 2x^2y + 2xy^2+2x]_{x=0}^{(1-y)}~dy \\ &\stackrel{(*)}{=} \int_0^1 [3(1-y)^2 + 2(1-y)^2y + 2(1-y)y^2+2(1-y)]~dy \\ &= \int_0^1 5-6y+y^2 dy \\ &= [5y - 3y^2 + \frac{1}{3}y^3]_{y=0}^1 = 2,\overline{3}
 \end{align*}$$
 
+
+## Übungsaufgabe 1: Integral über einem anderen Dreieck
+
 Als Übung könnt ihr das Integral über dem "Nachbardreieck" zwischen den drei Punkten (1,0), (0,1), (1,1) bestimmen. Die Lösung lautet:
 
 $$ \int_0^1 \int_{1-y}^1 6x+4xy+2y^2+2~dx~dy = 4,\overline{3} $$
 
-## Übungsaufgabe: Integral mit Trapez-Grundflächen
+## Übungsaufgabe 2: Integral mit Trapez-Grundflächen
 
 Versucht einmal, das Integral über folgender Grundfläche zu bestimmen:
 
-<div id="mygraph3" style="text-align: center;"><b>Wenn ihr hier nichts seht, Javascript aktivieren oder Blocker deaktivieren.</b></div>
+
+
+
+<div id="plottrapezoid" style="width:800px;height:600px;"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+
+
+const region3 = {
+  type:'mesh3d',
+
+  // vertices in boundary order
+  x:[0,0,1,1],
+  y:[0,3,2,0],
+  z:[0,0,0,0],
+
+  // triangles
+  i:[0,0],
+  j:[1,2],
+  k:[2,3],
+
+  color:'gray',
+  opacity:0.6,
+  hoverinfo:'skip'
+};
+
+
+Plotly.newPlot('plottrapezoid',[surface,region3],layout);
+
+</script>
+
+
+
+
 
 Herauskommen sollte $28,\overline{3}$.
 
