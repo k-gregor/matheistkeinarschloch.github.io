@@ -25,7 +25,7 @@ permalink: /lineare-unabhaengigkeit/
 
 
 
-Die lineare Unabhängigkeit bereitet vielen Studenten Kopfzerbrechen. Was bedeutet sie überhaupt?
+Die lineare Unabhängigkeit bereitet vielen Studenten Kopfzerbrechen, aber sie ist eine der wichtigsten Grundlagen der linearen Algebra! Und eigentlich ist sie gar nicht so schwer zu verstehen. Also, lass uns das mal anschauen. Was bedeutet linear unabhängig überhaupt?
 
 Anschauliche Definition: Eine Gruppe von Vektoren ist linear unabhängig, wenn keiner der Vektoren durch eine Linearkombination der anderen dargestellt werden kann.
 

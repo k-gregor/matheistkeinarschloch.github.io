@@ -106,4 +106,4 @@ Die reellen Zahlen $(\mathbb{R}, +, \cdot)$ bilden einen Körper.
 
 Die komplexen Zahlen Zahlen $(\mathbb{C}, +, \cdot)$ bilden einen Körper.
 
-Die quadratischen Matrizen bilden keinen Körper, weil nicht zu jedem Element ein multiplikatives Inverses existiert und weil die Multiplikation nicht kommutativ ist.
+Die quadratischen Matrizen bilden keinen Körper, weil nicht zu jedem Element ein multiplikatives [Inverses]({{ "/invertierbare-matrizen-eigenschaften/" | relative_url }}) existiert und weil die Multiplikation nicht kommutativ ist.
