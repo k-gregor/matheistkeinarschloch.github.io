@@ -89,7 +89,7 @@ Ihr könnt euch nochmal rechnerisch vergewissern, dass es stimmt, indem ihr zeig
 
 ## Ein Beispiel mit mehrfachen Eigenwerten
 
---&gt; folgt in Kürze!
+--> folgt in Kürze!
 
 ## Ein Beispiel einer nicht diagonalisierbaren Matrix
 

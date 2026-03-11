@@ -39,7 +39,8 @@ Beim Integralkriterium vergleicht man die Reihe mit dem dazugehörigen Integral:
 <blockquote>Eine Reihe $ \sum_{k=p}^\infty a_k $ konvergiert genau dann, wenn das Integral $\int_{p}^\infty a(x) dx$ einen endlichen Wert hat.</blockquote>
 Warum macht das Sinn? Naja, das Integral ist ja nichts anderes als, die Fläche unter dem Graphen von $f$ und vielleicht erinnert ihr euch daran, wie man das hergeleitet hat: Mit der Obersumme und Untersumme, wie hier:
 
-<img class="wp-image-859 aligncenter" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/11/reihe_integral-300x270.png" alt="reihe_integral" width="400" height="360" />
+
+<img src="{{ site.baseurl }}/assets/reihe_integral.png" alt="Die Folge ist zwar konvergent, aber nicht monoton fallend! Das Leibnizkriterium zieht hier also nicht.">
 
 Man hat die Flächen von Rechtecken zusammenaddiert, deren Höhe jeweils der Funktionswert an der Stelle war. Und die Breite der Rechtecke (hier 1) hat man immer kleiner werden lassen, und im Grenzwert hat man das Integral erhalten. Das heißt, im Wesentlichen ist das Integral auch einfach eine Art Reihe. Im Beispiel hier sehen wir die Folge $a_k = \frac{1}{k}$. die Reihe $\sum a_k$ ist gerade die Summe der Flächeninhalte der Rechtecke, denn der Flächeninhalt ist gerade $1\cdot a_k$ für jedes $k$. Dazu sehen wir die Funktion $f(x) = \frac{1}{x}$. Man sieht, dass die Fläche unterhalb der Funktion in etwa der Summe der Flächen der Rechtecke entspricht. Wenn das eine also endlich ist, so muss es das andere auch sein und umgekehrt. Schauen wir das uns einmal an konkreten Beispielen an.
 <h3>Beispiele für das Integralkriterium</h3>
@@ -80,6 +81,7 @@ Eine klassische Majorante ist die Reihe $\sum \frac{1}{n^2}$. Mit dieser Majoran
 $$ \sum \frac{1}{n^3} $$
 
 absolut konvergent ist. Schließlich gilt $\frac{1}{n^2} \geq \frac{1}{n^3}$. Jeder Summand der Majorante ist also größer, aber trotzdem konvergiert die Majorante. Damit muss $\sum \frac{1}{n^3}$ auch konvergieren.
+
 <h4>Klassische Majoranten</h4>
 Siehe [Grundlagen von Reihen]({{ "/reihen-grundlagen/" | relative_url }}) für Beispiele von konvergenten Reihen. Jede davon könnte potentiell eine Majorante sein. Man muss nur eine passende finden, sodass man möglichst gut die Abschätzung der gegebenen Reihe zu der Majorante machen kann.
 
@@ -95,12 +97,14 @@ Die Reihe $\sum \frac{2^n}{n!}$ konvergiert, denn:
 $$ \left| \frac{a_{n+1}}{a_n} \right| =  \left| \frac{\frac{2^{n+1}}{(n+1)!}}{\frac{2^n}{n!}} \right| = \frac{2^{n+1} n!}{2^n (n+1)!}   = \frac{2 n!}{(n+1)!} = \frac{2}{n+1}$$
 
 Und das ist $<\frac{2}{3} <1$ ab $n=2$.
+
 <h3>Warum brauchen wir das q beim Quotientenkriterium?</h3>
+
 Nehmen wir die Reihe $\sum \frac{1}{n}$ (ihr seht schon, ich hab's irgendwie mit der Reihe. Aber es ist tatsächlich einfach die, mit der man die meisten Sachen gut zeigen kann). Wir wissen ja nun (siehe oben), dass die Reihe divergiert. Was passiert wenn wir das Quotientenkriterium auf die harmonische Reihe anwenden?
 
 $$ \left| \frac{a_{n+1}}{a_n}\right| = \left| \frac{\frac{1}{n+1}}{\frac{1}{n}}\right| = \left| \frac{n}{n+1}\right| = \frac{n}{n+1} $$
 
-Nun, das ist zwar immer $<1$ aber wir finden niemals ein $q<1$ sodass $\left| \frac{a_{n+1}}{a_n}\right| \leq q < 1$ gilt! Das Quotientenkriterium greift hier also nicht! Und das ist wichtig, schließlich konvergiert die Reihe ja auch nicht. Dieses $q$ gibt uns also immer einen "Sicherheitsabstand" zur $1$. Nur wenn dieses $q$ existiert, werden die Folgeglieder klein genug, sodass die Reihe konvergiert. Dass der Quotient immer kleiner ist als $1$ reicht nicht aus!
+Nun, das ist zwar immer $<1$ aber wir finden niemals ein $q<1$ sodass $\left\| \frac{a_{n+1}}{a_n}\right\| \leq q < 1$ gilt! Das Quotientenkriterium greift hier also nicht! Und das ist wichtig, schließlich konvergiert die Reihe ja auch nicht. Dieses $q$ gibt uns also immer einen "Sicherheitsabstand" zur $1$. Nur wenn dieses $q$ existiert, werden die Folgeglieder klein genug, sodass die Reihe konvergiert. Dass der Quotient immer kleiner ist als $1$ reicht nicht aus!
 
 <hr />
 
@@ -115,7 +119,7 @@ $\sum_{n=0}^\infty \frac{3^n}{2^{2n}} $ konvergiert, denn
 
 $$ \sqrt[n]{\frac{3^n}{2^{2n}}} = \frac{3}{4} < 1 $$
 <h3>Warum braucht man beim Wurzelkriterium den Limes Superior?</h3>
-Schauen wir uns kurz die zweite Beschreibung des Kriteriums mit dem Limes Superior $\limsup$ an. Der Limes Superior beschreibt den größten Häufungspunkt (siehe Artikel zu <a href="http://matheistkeinarschloch.de/folgen-und-grenzwerte/">Folgen und Grenzwerten</a>) einer Folge. Also zum Beispiel ist $\limsup_{n\rightarrow \infty} (-1)^n = 1$. Die Folge hat die zwei Häufungspunkte $1$ und $-1$, und der größte davon ist offensichtlich $1$.
+Schauen wir uns kurz die zweite Beschreibung des Kriteriums mit dem Limes Superior $\limsup$ an. Der Limes Superior beschreibt den größten Häufungspunkt (siehe Artikel zu [Folgen und Grenzwerten]({{ "/folgen-grenzwerte/" | relative_url }})) einer Folge. Also zum Beispiel ist $\limsup_{n\rightarrow \infty} (-1)^n = 1$. Die Folge hat die zwei Häufungspunkte $1$ und $-1$, und der größte davon ist offensichtlich $1$.
 
 Was bringt uns das hier? Naja, schauen wir uns die Folge
 
@@ -145,11 +149,16 @@ Schauen wir uns nun aber folgende Reihe an:
 
 $$ \sum (-1)^n a_n $$
 
-mit $ a_n = \begin{cases} \frac{1}{n} & n~ \mbox{ungerade} \\ \frac{2}{n} & n~ \mbox{gerade}  \end{cases} $
+mit
+
+$$ a_n = \begin{cases} \frac{1}{n} & n~ \mbox{ungerade} \\ \frac{2}{n} & n~ \mbox{gerade}  \end{cases}
+$$
 
 Das Leibnizkriterium zieht hier nicht, denn die Folge $a_n$ ist nicht monoton fallend! Sie konvergiert zwar gegen Null, hüpft aber immer wieder ein bisschen hoch und runter
 
-<img class="size-full wp-image-831 aligncenter" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/11/folge_nicht_monoton_fallend_konvergent.png" alt="folge_nicht_monoton_fallend_konvergent" width="530" height="403" />
+
+<img src="{{ site.baseurl }}/assets/folge_nicht_monoton_fallend_konvergent.png" alt="Die Folge ist zwar konvergent, aber nicht monoton fallend! Das Leibnizkriterium zieht hier also nicht." width="400" height="400">
+
 
 Diese Reihe konvergiert tatsächlich nicht, denn:
 

@@ -104,9 +104,9 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <p>$$ f : \mathbb{R} \rightarrow \mathbb{R},~~ f(x) = x^2 $$</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://matheistkeinarschloch.de/wp-content/uploads/2016/01/xquadrat.png" alt="" class="wp-image-239"/></figure>
-<!-- /wp:image -->
+
+<img src="{{ site.baseurl }}/assets/xquadrat.png" alt="Plot der Funktion X zum Quadrat"/>
+
 
 <!-- wp:paragraph -->
 <p>ist als solches weder injektiv noch surjektiv! Denn alle y-Werte außer Null werden von zwei x-Werten erreicht (also nicht injektiv) und manche y-Werte werden gar nicht erreicht, alle negativen Zahlen nämlich (also nicht surjektiv). Letzteres können wir aber ändern, indem wir den tatsächlichen minimalen Wertebereich von f nehmen (nennt man auch Bild(f)):</p>
@@ -124,9 +124,10 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <p>Damit die Funktion injektiv wäre, müssten wir ihren Definitionsbereich einschränken, zum Beispiel nur alle x-Werte zulassen, die größer oder gleich Null sind. Beachtet, dass wir dann eine wirkliche Änderung an der Funktion machen, die sieht nämlich dann nur noch so aus:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":240,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://matheistkeinarschloch.de/wp-content/uploads/2016/01/xquadrateingeschr.png" alt="" class="wp-image-240"/></figure>
-<!-- /wp:image -->
+
+
+<img src="{{ site.baseurl }}/assets/xquadrateingeschr.png" alt="Plot der Funktion X zum Quadrat mit eingeschraenktem Definitionsbereich"/>
+
 
 <!-- wp:paragraph -->
 <p>Die Funktion</p>
@@ -157,11 +158,11 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>ist als solche injektiv, aber nicht surjektiv. Wenn wir allerdings den Wertebereich auf $\mathbb{R}_{&gt; 0}$ ändern, welches absolut nichts ändert, ist die Funktion bijektiv mit Umkehrfunktion</p>
+<p>ist als solche injektiv, aber nicht surjektiv. Wenn wir allerdings den Wertebereich auf $\mathbb{R}_{> 0}$ ändern, welches absolut nichts ändert, ist die Funktion bijektiv mit Umkehrfunktion</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>$$ f^{-1} : \mathbb{R}_{&gt;0} \rightarrow \mathbb{R},~~ f^{-1}(x) = \ln(x) $$</p>
+<p>$$ f^{-1} : \mathbb{R}_{>0} \rightarrow \mathbb{R},~~ f^{-1}(x) = \ln(x) $$</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -192,9 +193,9 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <p>ist weder surjektiv noch injektiv, das kann man sich am Graphen veranschaulichen:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":242,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://matheistkeinarschloch.de/wp-content/uploads/2016/01/sin.png" alt="" class="wp-image-242"/></figure>
-<!-- /wp:image -->
+
+
+<img src="{{ site.baseurl }}/assets/sin.png" alt="Plot der Sinusfunktion."/>
 
 <!-- wp:paragraph -->
 <p> Der Sinus kann aber surjektiv gemacht werden indem wir (keine Änderung an der Funktion, sähe immernoch genauso aus) den Wertebereich einschränken:</p>
@@ -216,9 +217,7 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <p>bijektiv:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":245,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://matheistkeinarschloch.de/wp-content/uploads/2016/01/sineingeschr.png" alt="" class="wp-image-245"/></figure>
-<!-- /wp:image -->
+<img src="{{ site.baseurl }}/assets/sineingeschr.png" alt="Plot der Sinusfunktion mit eingeschraenktem Definitionsbereich"/>
 
 <!-- wp:heading {"level":3} -->
 <h3>Hinweise</h3>

@@ -59,13 +59,19 @@ Damit wir überhaupt nur an Konvergenz denken können, muss die [Folge]({{ "/fol
 
 Das klassische Beispiel dafür ist die <strong>harmonische Reihe</strong> $\sum \frac{1}{n}$. Diese Reihe ist divergent! Die Reihe $\sum \frac{1}{n^2}$ allerdings ist konvergent. Das klingt erstmal total seltsam, aber wird klarer, wenn man sich das mal an einem Bild anschaut. Die blauen Punkte beschreiben die Folgen, $\frac{1}{n}$ bzw. $\frac{1}{n^2}$. Und die roten Punkte bilden die sogenannte "Partialsumme", also immer die Summe, aufsummiert bis zum $n$-ten Glied.
 
-<img class="alignnone wp-image-844" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/11/reihe1-300x240.png" alt="Die Partialsummen der harmonischen Reihe wachsen immernoch sehr stark an, die Reihe divergiert" width="399" height="320">
 
-<img class="alignnone wp-image-843" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/11/reihe2-300x240.png" alt="Die Partialsummen dieser Reihe wachsen schnell kaum noch an, die Reihe konvergiert" width="399" height="320">
+
+<img src="{{ site.baseurl }}/assets/reihe1-300x240.png" alt="Die Partialsummen der harmonischen Reihe wachsen immernoch sehr stark an, die Reihe divergiert">
+
+
+<img src="{{ site.baseurl }}/assets/reihe2-300x240.png" alt="Die Partialsummen dieser Reihe wachsen schnell kaum noch an, die Reihe konvergiert">
+
 
 Man sieht hier sehr schön, wie die Partialsummen von $\sum \frac{1}{n}$ immernoch sehr stark ansteigen, die Partialsummen von $\sum \frac{1}{n^2}$ aber schon sehr schnell kaum noch anwachsen. Obwohl beide Folgen recht schnell gegen Null gehen (die blauen Punkte), sodass wir in dieser Grafik eigentlich kaum einen Unterschied erkennen können, reicht dieser Unterschied aus, dass die eine Reihe konvergent ist und die andere divergent. Eine genauere mathematische Erklärung, warum die harmonische Reihe divergiert findet ihr in dem Artikel [Reihen (Konvergenzkriterien und Beispiele)]({{ "/reihen-konvergenzkriterien-beispiele/" | relative_url }})
 
-<img class="size-medium wp-image-912 aligncenter" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/11/meme_harmonicseries-300x226.jpg" alt="meme_harmonicseries" width="300" height="226">
+
+<img src="{{ site.baseurl }}/assets/memes/meme_harmonicseries.jpg" alt="Meme">
+
 
 Das geschulte Auge wird von dem Bild der Reihe $\sum \frac{1}{n}$ an den Logarithmus erinnert, welcher zwar auch immer schwächer steigt, aber eben doch immer weiter ansteigt, bis $\infty$.
 <h2>Kriterien, um zu bestimmen ob eine Reihe konvergent oder divergent ist</h2>
@@ -82,5 +88,5 @@ Zuletzt noch eine kleine Liste von Reihen, die ihr unbedingt auswendig können s
  	<li>$ \sum_{k=0}^\infty \frac{x^k}{k!} = e^x$</li>
  	<li>$\sum_{k=0}^\infty (-1)^k \frac{x^{2k+1}}{(2k+1)!} = \sin(x)$</li>
  	<li>$\sum_{k=1}^\infty (-1)^k \frac{x^{2k}}{(2k)!} = \cos(x)$</li>
- 	<li>$ \sum_{k=0}^\infty x^k$, die "geometrische Reihe", sie konvergiert für $|x|&lt;1$ gegen $\frac{1}{1-q}$ und divergiert andernfalls. Hierzu ist bereits ein Artikel in Arbeit.</li>
+ 	<li>$ \sum_{k=0}^\infty x^k$, die "geometrische Reihe", sie konvergiert für $|x|<1$ gegen $\frac{1}{1-q}$ und divergiert andernfalls. Hierzu ist bereits ein Artikel in Arbeit.</li>
 </ul>

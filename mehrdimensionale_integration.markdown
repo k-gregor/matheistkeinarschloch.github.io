@@ -126,7 +126,9 @@ $$
 \int_a^b \int_c^d f(x,y) ~dx ~dy = \int_c^d \int_a^b f(x,y) ~dy ~dx
 $$
 
-wir können also die Integrationsreihenfolge vertauschen. Falls $f$ über der Integrationsfläche nichtnegativ ist, können wir übrigens immer die Integrationsreihenfolge vertauschen! Denn entweder es greift der Satz von Fubini, oder das Integral ist eben unendlich! (Im Falle einer Funktion, die auch mal negativ sein kann, geht es nicht! Siehe Beispiel <a href="http://matheistkeinarschloch.de/?page_id=385">"Gegenbeispiel zum Satz von Fubini"</a>)
+wir können also die Integrationsreihenfolge vertauschen. Falls $f$ über der Integrationsfläche nichtnegativ ist, können wir übrigens immer die Integrationsreihenfolge vertauschen! Denn entweder es greift der Satz von Fubini, oder das Integral ist eben unendlich! (Im Falle einer Funktion, die auch mal negativ sein kann, geht es nicht! Siehe Beispiel ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegembeispiel-zum-satz-von-fubini/" | relative_url }}))
+
+
 <h4>Wann kann man also die Integrationsreihenfolge vertauschen?</h4>
 <ul>
  	<li>Wenn $f$ über der Integrationsfläche nicht-negativ ist</li>
@@ -135,7 +137,7 @@ wir können also die Integrationsreihenfolge vertauschen. Falls $f$ über der In
 <h4>Wann kann man die Integrationsreihenfolge nicht vertauschen?</h4>
 <ul>
  	<li>Bei Funktionen, die im Integrationsbereich komplizierte Stellen haben, z.B. "durch Null teilen"</li>
- 	<li>siehe Blog-Eintrag <a href="http://matheistkeinarschloch.de/?page_id=385">"Gegenbeispiel zum Satz von Fubini"</a></li>
+ 	<li>siehe Blog-Eintrag ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegembeispiel-zum-satz-von-fubini/" | relative_url }}))</li>
 </ul>
 Für andere Arten von Funktionen, die nicht in diese Klassen fallen, muss man eben im Einzelfall die Voraussetzungen des Satzes von Fubini nachprüfen. Das wird einem aber eher selten aufkommen.
 
@@ -151,7 +153,7 @@ $$
 
 &nbsp;
 
-<img class="aligncenter wp-image-788" src="{{ site.baseurl }}/assets/memes/meme_fubini.jpg" alt="Good Guy Fubini lässt dich die Integrationsreihenfolge vertauschen" width="400" height="400">
+<img src="{{ site.baseurl }}/assets/memes/meme_fubini.jpg" alt="Good Guy Fubini lässt dich die Integrationsreihenfolge vertauschen" width="400" height="400">
 
 ## Integrale mit nicht-rechteckigen Grundflächen
 

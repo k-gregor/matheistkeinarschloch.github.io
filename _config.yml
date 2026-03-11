@@ -55,12 +55,12 @@ navigation:
         url: /reihen-grundlagen/
       - title: Reihen - Konvergenzkriterien und Beispiele
         url: /reihen-konvergenzkriterien-beispiele/
-      - title: Die injektive/surjektive/bijektive Kneipenprügelei
+      - title: Die injektive, surjektive, bijektive Kneipenprügelei
         url: /die-injektive-surjektive-bijektive-kneipenpruegelei/
       - title: Monotonie
-        url: /monotonie/
+        url: /monotonie-von-funktionen/
       - title: Stetigkeit
-        url: /stetigkeit/
+        url: /stetigkeit-von-funktionen/
       - title: Taylor-Polynome
         url: /taylor-polynome/
       - title: Polarkoordinaten
