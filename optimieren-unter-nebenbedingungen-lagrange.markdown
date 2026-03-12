@@ -172,9 +172,6 @@ Das Thema ist natürlich noch viel größer als das, was hier gezeigt wurde. Zwe
 </ul>
 
 
-<script src="http://mathe-ist-kein-arschloch.com/wp-content/uploads/2016/01/lagrange.js" type="text/javascript"></script>
-
-
 # Weitere Artikel
 
 [Mehrdimensionales Ableiten]({{ "/mehrdimensionales-ableiten/" | relative_url }})
