@@ -59,6 +59,7 @@ var surface = {
   x: x,
   y: y,
   z: z,
+  colorscale:'Viridis',
   hovertemplate: "x=%{x}<br>y=%{y}<br>z=%{z}<extra></extra>"
 };
 
@@ -280,7 +281,7 @@ Zweiter Schritt: Rechteck-Integral: Integral über [0,1]x[0,2] ergibt $19,\overl
 Dritter Schritt: Aufstellen des Dreiecksintegrals: Die Grenzen sind: y geht von 2 bis 3, während x von 0 bis 3-y geht. Das Integral über dem Dreieck hat Volumen 9.
 Vierter Schritt: Zusammengerechnet also $19,\overline{3} + 9 = 28,\overline{3}$
 
-# Weiter Artikel
+# Weitere Artikel
 
 ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegenbeispiel-zum-satz-von-fubini/" | relative_url }})
 
