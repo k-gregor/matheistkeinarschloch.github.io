@@ -31,8 +31,6 @@ plugins:
   - jekyll-feed
 
 navigation:
-  - title: Über diese Seite
-    url: /about/
   - title: Lineare Algebra
     subitems:
       - title: Gruppen, Ringe, Körper
@@ -83,6 +81,16 @@ navigation:
         url: chi-quadrat-test
       - title: T-Test (zwei Stichproben)
         url: zwei-stichproben-t-test
+  - title: Über diese Seite
+    subitems:
+      - title: Über mich
+        url: ueber-mich
+      - title: Datenschutzerklärung
+        url: datenschutz
+      - title: Haftungsausschluss
+        url: haftungsausschluss
+      - title: Impressum
+        url: impressum
 
 # Exclude from processing.
 # The following items will not be processed, by default.
