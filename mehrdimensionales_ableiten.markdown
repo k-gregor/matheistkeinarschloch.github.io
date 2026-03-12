@@ -155,3 +155,6 @@ und das wenn wir für (dx,dy) dieselbe Richtung nehmen, kommt dort auch wieder -
 # Weitere Artikel
 
 [Mehrdimensionale Integration]({{ "/mehrdimensionale-integration/" | relative_url }})
+
+
+[Mehrdimensionales Optimieren unter Nebenbedingungen (Lagrange)]({{ "/optimieren-unter-nebenbedingungen-lagrange/" | relative_url }})
