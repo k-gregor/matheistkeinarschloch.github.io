@@ -58,11 +58,11 @@ Wenn $f'(x) >= 0$, so kann man folgern, dass $f$ monoton steigend ist. (Es könn
 Für monoton fallende Funktionen kann muss man einfach die Ungleichung umkehren, also $f'(x) \leq 0$ bzw. $f'(x) < 0$ für monotonie und strenge Monotonie.
 
 Beispiele
-$f(x) = e^x \Rightarrow f'(x) = e^x >0&nbsp;\Rightarrow f$ ist auf dem gesamten Definitionsbereich ($\mathbb{R}$) streng monoton steigend
-$f(x) = ln(x)&nbsp;\Rightarrow f'(x) = 1/x > 0&nbsp;\Rightarrow f$ ist auf dem gesamten Definitionsbereich $(0,\infty)$ streng monoton steigend
-$f(x) = 5&nbsp;\Rightarrow f'(x) = 0&nbsp;\Rightarrow f$ ist auf ganz $\mathbb{R}$ monoton steigend und überall monoton fallend
-$f(x) = x^2&nbsp;\Rightarrow f'(x) > 0 ~\mbox{für}~ x > 0 \Rightarrow f$ ist streng monoton steigend auf $(0, \infty)$
-$f(x) = x^2&nbsp;\Rightarrow f'(x) < 0 ~\mbox{für}~ x < 0 \Rightarrow f$ ist streng monoton steigend auf $(\infty, 0)$
+$f(x) = e^x \Rightarrow f'(x) = e^x >0 \Rightarrow f$ ist auf dem gesamten Definitionsbereich ($\mathbb{R}$) streng monoton steigend
+$f(x) = ln(x) \Rightarrow f'(x) = 1/x > 0 \Rightarrow f$ ist auf dem gesamten Definitionsbereich $(0,\infty)$ streng monoton steigend
+$f(x) = 5 \Rightarrow f'(x) = 0 \Rightarrow f$ ist auf ganz $\mathbb{R}$ monoton steigend und überall monoton fallend
+$f(x) = x^2 \Rightarrow f'(x) > 0 ~\mbox{für}~ x > 0 \Rightarrow f$ ist streng monoton steigend auf $(0, \infty)$
+$f(x) = x^2 \Rightarrow f'(x) < 0 ~\mbox{für}~ x < 0 \Rightarrow f$ ist streng monoton steigend auf $(\infty, 0)$
 
 Tatsächlich ist $x^2$ auch auf dem Intervall $[0, \infty)$ (also inklusive $x=0$) streng monoton steigend, obwohl $f'(0) = 0$ ist. Näheres zu diesen Spezialfällen im folgenden Abschnitt:
 <h3>"Gegenbeispiel": $f'(x) > 0$ ist nur hinreichendes Kriterium</h3>
@@ -92,7 +92,7 @@ Das heißt, eine streng monotone Funktion ist immer injektiv. Und weil wir Surje
 <ol>
  	<li>Angenommen, wir haben für eine Funktion $f$ gezeigt, dass sie auf $(-\infty, 0]$ und $(0, \infty)$ streng monoton fallend ist. Können wir daraus schließen, dass sie auf ganz $\mathbb{R}$ streng monoton fallend ist?</li>
  	<li>Zeigt mittels der Definition (also ohne Ableitung!) dass $e^x$ streng monoton wachsend ist!</li>
- 	<li>Prüft mittels der Ableitung die Monotonie-Eigenschaften von $f(x) = 3x^2 -12x&nbsp; + 8$</li>
+ 	<li>Prüft mittels der Ableitung die Monotonie-Eigenschaften von $f(x) = 3x^2 -12x  + 8$</li>
 </ol>
 <h3>Lösungen:</h3>
 1. Nein, nicht wenn die Funktion nicht [stetig]({{ "/stetigkeit/" | relative_url }}) ist! Die Funktion könnte auf $(-\infty, 0]$ streng monoton fallend sein, an der Stelle $x=0$ einen Sprung nach oben machen, und dann wieder fallen!

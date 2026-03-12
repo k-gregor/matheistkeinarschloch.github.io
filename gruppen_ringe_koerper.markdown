@@ -58,7 +58,7 @@ Die reellen Zahlen und die Potenzierung $\hat{ }$ (damit ist gemeint $a\hat{ } b
 
 Die Polynome bilden mit der Addition eine abelsche Gruppe, wenn die Koeffizienten aus einer abelschen Gruppe kommen. Die uns bekannten "normalen" Polynome, wo die Koeffizienten reelle Zahlen sind, bilden also eine abelsche Gruppe. Das inverse Element zu jedem Polynom ist einfach das Polynom, wo jeder Koeffizient gerade der inverse Koeffizient ist, also ist zum Beispiel das inverse Element zu $4x^2 + x -1$ einfach $-4x^2 - x + 1$. Daran sieht man auch gleich, dass die Koeffizienten aus einer abelschen Gruppe kommen müssen, sonst würde das nicht funktionieren.
 
-&nbsp;
+ 
 <h3>Ringe</h3>
 Elemente nur addieren oder nur multiplizieren reicht offensichtlich nicht aus, um richtige Mathematik zu machen, wir brauchen beide Verknüpfungen. Hier kommen Ringe ins Spiel (wobei mit "Ring" weniger etwas kreisrundes gemeint ist, sondern eher die Bedeutung "Zusammenschluss von Dingen"). Fangen wir mit der Definition an:
 

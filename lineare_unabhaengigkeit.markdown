@@ -115,11 +115,11 @@ Die Vektoren $v = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$ und $w = \begin{pma
 
 ## 2. Beispiel
 
-Die Vektoren $v_1 = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$,&nbsp; $ v_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$ und&nbsp;$ v_3 = \begin{pmatrix} 5 \\ 3 \end{pmatrix}$ sind <strong>linear abhängig, </strong>weil sich $v_3$ durch $v_1$ und $v_2$ darstellen lässt: $v_3 = 2.5v_1 + 3v_2$.
+Die Vektoren $v_1 = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$,  $ v_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$ und $ v_3 = \begin{pmatrix} 5 \\ 3 \end{pmatrix}$ sind <strong>linear abhängig, </strong>weil sich $v_3$ durch $v_1$ und $v_2$ darstellen lässt: $v_3 = 2.5v_1 + 3v_2$.
 
 ## 3. Beispiel
 
-Die Vektoren $v_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$,&nbsp; $ v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$ und&nbsp;$ v_3 = \begin{pmatrix} 5 \\ 3 \\ 1 \end{pmatrix}$ sind <strong>linear unabhängig, </strong>weil sich keiner der drei Vektoren durch eine Kombination der anderen darstellen lässt: egal, wie oft wir $v_1$ und $v_2$ miteinander kombinieren, in der dritten Koordinate wird niemals eine 1 stehen können, also können wir die beiden niemals zu $v_3$ kombiniern! Das heißt, es gibt keine reelen Zahlen $\lambda_1$ und $\lambda_2$, sodass $v_3 = \lambda_1v_1 + \lambda_2v_2$. Das gleiche gilt für die anderen Kombinationen.
+Die Vektoren $v_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$,  $ v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$ und $ v_3 = \begin{pmatrix} 5 \\ 3 \\ 1 \end{pmatrix}$ sind <strong>linear unabhängig, </strong>weil sich keiner der drei Vektoren durch eine Kombination der anderen darstellen lässt: egal, wie oft wir $v_1$ und $v_2$ miteinander kombinieren, in der dritten Koordinate wird niemals eine 1 stehen können, also können wir die beiden niemals zu $v_3$ kombiniern! Das heißt, es gibt keine reelen Zahlen $\lambda_1$ und $\lambda_2$, sodass $v_3 = \lambda_1v_1 + \lambda_2v_2$. Das gleiche gilt für die anderen Kombinationen.
 (Bemerkung: ich lasse hier ein kleines Detail aus, auf das ich unten näher eingehen werde).
 <h2>Die formale Definition</h2>
 <blockquote>Eine Gruppe von Vektoren $v_1, v_2, \ldots v_n \in \mathbb{R}^n$ heißt linear unabhängig, wenn die Gleichung
@@ -132,7 +132,7 @@ Die Lösung, wo alle $\lambda_i$ Null sind, wird auch die "Triviallösung" genan
 
 $$ \lambda_1v_2 + \lambda_2v_3 + \cdots + \lambda_nv_n = -\lambda_1v_1 $$
 
-Wenn wir also jetzt $\lambda$s finden, sodass die Gleichung erfüllt wird, heißt das, dass wir eine Kombination von $v_2, \ldots, v_n$ gefunden haben, mit denen sich $-\lambda_1v_1$ darstellen lässt. Das ist ein klein bisschen anders als unsere Definition vorher, wo wir wollten dass sich $v_1$ durch den Rest darstellen lässt, und jetzt steht hier aber noch ein $-\lambda_1$. Aber, falls $-\lambda_1 \neq 0$, können wir die Gleichung durch $-\lambda_1$ teilen und wir haben genau das was wir wollen. $\lambda_1$ könnte aber auch Null sein. Der Fall war einfach in unserer ursprünglichen anschaulichen Definition noch nicht enthalten. Ein Beispiel dazu wäre z.B. $ v_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix},&nbsp;v_2 = \begin{pmatrix} 3 \\ 0 \\ 0 \end{pmatrix},&nbsp;v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} $. Dann wäre nämlich $0v_3 = 1v_1 - \frac{1}{3}v_2$. Diese drei sind also linear abhängig.
+Wenn wir also jetzt $\lambda$s finden, sodass die Gleichung erfüllt wird, heißt das, dass wir eine Kombination von $v_2, \ldots, v_n$ gefunden haben, mit denen sich $-\lambda_1v_1$ darstellen lässt. Das ist ein klein bisschen anders als unsere Definition vorher, wo wir wollten dass sich $v_1$ durch den Rest darstellen lässt, und jetzt steht hier aber noch ein $-\lambda_1$. Aber, falls $-\lambda_1 \neq 0$, können wir die Gleichung durch $-\lambda_1$ teilen und wir haben genau das was wir wollen. $\lambda_1$ könnte aber auch Null sein. Der Fall war einfach in unserer ursprünglichen anschaulichen Definition noch nicht enthalten. Ein Beispiel dazu wäre z.B. $ v_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, v_2 = \begin{pmatrix} 3 \\ 0 \\ 0 \end{pmatrix}, v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} $. Dann wäre nämlich $0v_3 = 1v_1 - \frac{1}{3}v_2$. Diese drei sind also linear abhängig.
 
 
 

@@ -143,7 +143,7 @@ Für andere Arten von Funktionen, die nicht in diese Klassen fallen, muss man eb
 
 In unserem Fall liegt natürlich ein Polynom vor, es geht also problemlos und es kommt dasselbe heraus:
 
-&nbsp;
+ 
 
 $$
 \begin{align*}
@@ -151,7 +151,7 @@ $$
 \end{align*}
 $$
 
-&nbsp;
+ 
 
 <img src="{{ site.baseurl }}/assets/memes/meme_fubini.jpg" alt="Good Guy Fubini lässt dich die Integrationsreihenfolge vertauschen" width="400" height="400">
 

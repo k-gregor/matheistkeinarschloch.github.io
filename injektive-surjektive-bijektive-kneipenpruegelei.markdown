@@ -210,7 +210,7 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>$$ f : [-\frac{\pi}{2};&nbsp;\frac{\pi}{2}] \rightarrow [-1; 1],~~ f(x) = \sin(x) $$</p>
+<p>$$ f : [-\frac{\pi}{2}; \frac{\pi}{2}] \rightarrow [-1; 1],~~ f(x) = \sin(x) $$</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -228,7 +228,7 @@ permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>$$ f|_{ [-\frac{\pi}{2};&nbsp;\frac{\pi}{2}]} $$</p>
+<p>$$ f|_{ [-\frac{\pi}{2}; \frac{\pi}{2}]} $$</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
