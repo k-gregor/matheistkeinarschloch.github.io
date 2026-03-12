@@ -150,3 +150,8 @@ Um da Beispiel abzuschließen, könnt ihr die letzte Aussage nochmal überprüfe
 $$ \begin{align*} D_{(-1,1)}(2,1) &= -12 \\ df(2,1) &= 22dx+10dx \end{align*} $$
 
 und das wenn wir für (dx,dy) dieselbe Richtung nehmen, kommt dort auch wieder -12 raus!
+
+
+# Weitere Artikel
+
+[Mehrdimensionale Integration]({{ "/mehrdimensionale-integration/" | relative_url }})

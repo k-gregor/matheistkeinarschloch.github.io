@@ -126,7 +126,7 @@ $$
 \int_a^b \int_c^d f(x,y) ~dx ~dy = \int_c^d \int_a^b f(x,y) ~dy ~dx
 $$
 
-wir können also die Integrationsreihenfolge vertauschen. Falls $f$ über der Integrationsfläche nichtnegativ ist, können wir übrigens immer die Integrationsreihenfolge vertauschen! Denn entweder es greift der Satz von Fubini, oder das Integral ist eben unendlich! (Im Falle einer Funktion, die auch mal negativ sein kann, geht es nicht! Siehe Beispiel ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegembeispiel-zum-satz-von-fubini/" | relative_url }}))
+wir können also die Integrationsreihenfolge vertauschen. Falls $f$ über der Integrationsfläche nichtnegativ ist, können wir übrigens immer die Integrationsreihenfolge vertauschen! Denn entweder es greift der Satz von Fubini, oder das Integral ist eben unendlich! (Im Falle einer Funktion, die auch mal negativ sein kann, geht es nicht! Siehe Beispiel ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegenbeispiel-zum-satz-von-fubini/" | relative_url }}))
 
 
 <h4>Wann kann man also die Integrationsreihenfolge vertauschen?</h4>
@@ -137,7 +137,7 @@ wir können also die Integrationsreihenfolge vertauschen. Falls $f$ über der In
 <h4>Wann kann man die Integrationsreihenfolge nicht vertauschen?</h4>
 <ul>
  	<li>Bei Funktionen, die im Integrationsbereich komplizierte Stellen haben, z.B. "durch Null teilen"</li>
- 	<li>siehe Blog-Eintrag ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegembeispiel-zum-satz-von-fubini/" | relative_url }}))</li>
+ 	<li>siehe Blog-Eintrag ["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegenbeispiel-zum-satz-von-fubini/" | relative_url }}))</li>
 </ul>
 Für andere Arten von Funktionen, die nicht in diese Klassen fallen, muss man eben im Einzelfall die Voraussetzungen des Satzes von Fubini nachprüfen. Das wird einem aber eher selten aufkommen.
 
@@ -280,3 +280,9 @@ Zweiter Schritt: Rechteck-Integral: Integral über [0,1]x[0,2] ergibt $19,\overl
 Dritter Schritt: Aufstellen des Dreiecksintegrals: Die Grenzen sind: y geht von 2 bis 3, während x von 0 bis 3-y geht. Das Integral über dem Dreieck hat Volumen 9.
 Vierter Schritt: Zusammengerechnet also $19,\overline{3} + 9 = 28,\overline{3}$
 
+# Weiter Artikel
+
+["Gegenbeispiel zum Satz von Fubini"]({{ "/mehrdimensionale-integrale-gegenbeispiel-zum-satz-von-fubini/" | relative_url }})
+
+
+[Mehrdimensionales Ableiten]({{ "/mehrdimensionales-ableiten/" | relative_url }})

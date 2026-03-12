@@ -37,7 +37,7 @@ Unser kartesisches Koordinatensystem ist doch super, warum brauchen wir ein neue
 
 <a href="https://www.google.de/maps/@49.4068567,8.7044139,4349m/data=!3m1!1e3">https://www.google.de/maps/@49.4068567,8.7044139,4349m/data=!3m1!1e3</a>
 
-In der Mathematik sind die Polarkoordinaten immer dann wichtig, wenn Dinge auf Kreisen, Kugeln, oder Zylindern geschehen. Beispielsweise wenn man eine mehrdimensionale Funktion über einen Kreis integriert, was vor allem bei komplexen Zahlen etwas sehr wichtiges ist.
+In der Mathematik sind die Polarkoordinaten immer dann wichtig, wenn Dinge auf Kreisen, Kugeln, oder Zylindern geschehen. Beispielsweise wenn man eine mehrdimensionale Funktion über einen Kreis integriert, was vor allem bei [komplexen Zahlen]({{ "/komplexe-zahlen-grundlagen/" | relative_url }}) etwas sehr wichtiges ist.
 Umrechnen von kartesischen Koordinaten in Polarkoordinaten
 
 Schauen wir uns das folgende Bild an, auf dem der Punkt $p=(x,y)$ in kartesischen Koordinaten eingetragen ist. Wie kommen wir nun auf die Polarkoordinaten $(r, \varphi)$ desselben Punktes? Dazu muss man einfach nur ein bisschen Geometrie machen.

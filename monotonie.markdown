@@ -79,11 +79,11 @@ Zum Glück gibt es aber folgendes Resultat, was uns die Arbeit in diesen Fällen
 
 <h3>Monotonieeigenschaften lassen sich bei stetigen Funktionen auf abgeschlossene Intervalle erweitern</h3>
 
-Das heißt: Wenn wir gezeigt haben, dass $f$ auf dem offenen Intervall $(a,b)$ monoton ist, und $f$ ist [stetig]({{ "/stetigkeit/" | relative_url }}) auf $[a,b]$, so gilt die gezeigte Aussage auch für das abgeschlossene Intervall $[a,b]$!
+Das heißt: Wenn wir gezeigt haben, dass $f$ auf dem offenen Intervall $(a,b)$ monoton ist, und $f$ ist [stetig]({{ "/stetigkeit-von-funktionen/" | relative_url }}) auf $[a,b]$, so gilt die gezeigte Aussage auch für das abgeschlossene Intervall $[a,b]$!
 
 Also: Weil wir gezeigt haben, dass $f(x) = x^3$ auf $(0, \infty)$ streng monoton steigend ist, $f$ aber auf $[0, \infty)$ stetig ist ($f$ ist natürlich sogar auf ganz $\mathbb{R}$ stetig), gilt die Aussage auch für das Intervall $[0, \infty)$. Außerdem haben wir gezeigt, dass $x^3$ auf $(-\infty, 0)$ streng monoton steigend ist, wegen der Stetigkeit ist die Funktion also auch auf $(-\infty, 0]$ streng monoton steigend. Zusammengefasst können wir also sagen, dass $f(x) = x^3$ auf ganz $\mathbb{R}$ streng monoton steigend ist.
 
-Für $f(x) = x^2$ hatten wir gezeigt, dass $f$ auf $(0, \infty)$ streng monoton steigend ist, wegen der [Stetigkeit]({{ "/stetigkeit/" | relative_url }}) folgt also, dass $x^2$ auf $[0, \infty)$ streng monoton wächst. Genauso können wir argumentieren, dass $x^2$ auf $(-\infty, 0]$ streng monoton fällt.
+Für $f(x) = x^2$ hatten wir gezeigt, dass $f$ auf $(0, \infty)$ streng monoton steigend ist, wegen der [Stetigkeit]({{ "/stetigkeit-von-funktionen/" | relative_url }}) folgt also, dass $x^2$ auf $[0, \infty)$ streng monoton wächst. Genauso können wir argumentieren, dass $x^2$ auf $(-\infty, 0]$ streng monoton fällt.
 <h3>Zusammenhang zur Bijektivität</h3>
 Zu guter letzt noch ein kleiner Anwendungsfall der Monotonie. Wir erinnern uns an die Eigenschaften der Surjektivität, Injektivität und Bijektivität (siehe [Kneipenprügelei]({{ "/die-injektive-surjektive-bijektive-kneipenpruegelei/" | relative_url }})).
 Injektivität hieß ja, dass aus f(x)=f(y) auch sofort x=y folgt. Dies ist gleichbedeutend damit, dass f streng monoton ist!
@@ -95,7 +95,7 @@ Das heißt, eine streng monotone Funktion ist immer injektiv. Und weil wir Surje
  	<li>Prüft mittels der Ableitung die Monotonie-Eigenschaften von $f(x) = 3x^2 -12x  + 8$</li>
 </ol>
 <h3>Lösungen:</h3>
-1. Nein, nicht wenn die Funktion nicht [stetig]({{ "/stetigkeit/" | relative_url }}) ist! Die Funktion könnte auf $(-\infty, 0]$ streng monoton fallend sein, an der Stelle $x=0$ einen Sprung nach oben machen, und dann wieder fallen!
+1. Nein, nicht wenn die Funktion nicht [stetig]({{ "/stetigkeit-von-funktionen/" | relative_url }}) ist! Die Funktion könnte auf $(-\infty, 0]$ streng monoton fallend sein, an der Stelle $x=0$ einen Sprung nach oben machen, und dann wieder fallen!
 2. Wir nehmen ein beliebiges $x$ und ein $y > x$. Weil es einfacher ist, bezeichnen wir $y=x+h$ mit $h>0$. Jetzt schauen wir uns den Zusammenhang von $f(x)$ und $f(y)$ an:
 $$
 f(y) - f(x) = f(x+h) - f(x) = e^{x+h} - e^x = e^x(e^h - 1)
