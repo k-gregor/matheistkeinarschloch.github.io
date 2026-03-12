@@ -14,4 +14,4 @@ Warum ich diese Seite betreibe? Nunja, Mathematik ist einfach mal die Grundlage 
 
 Ich hoffe, dass ich euch mit dieser Webseite überzeugen kann, dass Mathe gar nicht so ein Arschloch ist, wie teilweise behauptet wird und euch ein bisschen bei euren Mathekursen helfen kann. Für Fragen und Anregungen bin ich jederzeit offen, schickt mir ne Mail an konstantin@matheistkeinarschloch.de.
 
-Ich hab noch eine andere Webseite zu dem was ich aktuell so mache, schaut mal vorbei: www.konstantin-gregor.com
+Ich hab noch eine andere Webseite zu dem was ich aktuell so mache, schaut mal vorbei: <a href="https://www.konstantin-gregor.com">www.konstantin-gregor.com</a>
