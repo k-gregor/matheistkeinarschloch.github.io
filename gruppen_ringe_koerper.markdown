@@ -94,7 +94,7 @@ Ein Körper $(G, +, \cdot)$ ist eine Kombination einer Menge $G$ mit den Verknü
 <ol>
 	<li>$(G, +)$ ist eine abelsche Gruppe</li>
 	<li>$(G \backslash \{0\}, \cdot)$ ist eine abelsche Gruppe</li>
-	<li>Es gelten die Distributivgesetze: $a \cdot(b + c) = a\cdot b + a\cdot c$ und $(a+b)\cdot c = a\cdot b + b\cdot c$.</li>
+	<li>Es gelten die Distributivgesetze: $a \cdot(b + c) = a\cdot b + a\cdot c$ und $(a+b)\cdot c = a\cdot c + b\cdot c$.</li>
 </ol>
 Bei (2) ist wichtig, dass das Nullelement ausgeschlossen wird. Warum? Nunja, zu diesem Element gibt es kein multiplikatives Inverses! Also wäre es keine Gruppe!
 
