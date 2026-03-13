@@ -20,9 +20,6 @@
 .site-nav li {
   position: relative;
   display: inline-block;
-  margin-right: 20px;
-  margin: 0px;               /* remove large vertical margin */
-  padding: 0px; 
 }
 
 /* Dropdown box */
@@ -45,18 +42,15 @@
 /* Dropdown items */
 .dropdown-content li {
   display: block;
-  margin: 0px;          
-  padding: 0px;
 }
 
 .dropdown-content li a {
   display: block;
   padding: 8px 16px;       /* controls spacing inside the item */
-  white-space: nowrap;      /* prevent line breaks */
   color: #333;
   text-decoration: none;
-  margin: 0px;          
-  padding: 0px;
+  margin: 2px;          
+  padding: 2px;
 }
 
 .dropdown-content li a:hover {
@@ -74,7 +68,6 @@
   user-select: none;
 }
 
-
 .site-nav {
   position: relative;      /* ensure z-index works */
   z-index: 2000;           /* above the graph canvas */
@@ -83,17 +76,5 @@
 .dropdown-content {
   z-index: 2100;           /* higher than graph */
   pointer-events: auto;    /* allow taps/clicks */
-  margin: 0px;          
-  padding: 0px;
 }
-
-ul {
-  margin: 0px;               /* remove large vertical margin */
-  padding: 0px; 
-}
-li {
-  margin: 0px;               /* remove large vertical margin */
-  padding: 0px; 
-}
-
 
