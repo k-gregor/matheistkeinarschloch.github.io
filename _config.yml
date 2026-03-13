@@ -24,6 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Mathematik für Studenten einfach erklärt.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://matheistkeinarschloch.de" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: G-3B35KG73ZC
+
 
 # Build settings
 theme: minima
