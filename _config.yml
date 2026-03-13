@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mathe ist kein Arschloch!
-email: your-email@example.com
+email: konstantin@matheistkeinarschloch.de
 description: >- # this means to ignore newlines until "baseurl:"
   Mathematik für Studenten einfach erklärt.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -82,6 +82,12 @@ navigation:
         url: /chi-quadrat-test/
       - title: T-Test (zwei Stichproben)
         url: /t-test-zwei-stichproben/
+  - title: Übungen
+    subitems:
+      - title: Probeklausur1
+        url: /probeklausur1/
+      - title: Probeklausur1 - Lösung
+        url: /probeklausur1-loesung/
   - title: Über diese Seite
     subitems:
       - title: Über mich

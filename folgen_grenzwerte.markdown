@@ -64,9 +64,12 @@ Das bedeutet anschaulich: Für jeden noch so kleinen Abstand $\varepsilon$ sind 
 
 Man schreibt dann $\lim_{n\rightarrow \infty} a_n = a$, oder auch $a_n \rightarrow a$, also $a$ ist der Grenzwert der Folge $(a_n)_{n\in \mathbb{N}}$.
 
-<img class="wp-image-773" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/10/grenzwert_def.png" alt="Folge mit Grenzwert" width="600" height="450" />
 
-Das ist eine Folge mit Grenzwert 1. Ab einem gewissen N sind alle Folgeglieder weniger als Epsilon von 1 entfernt. Und egal wie groß dieses Epsilon ist, irgendwann sind alle nah genug dran. Wenn das Epsilon sehr klein ist, dauert es einfach etwas länger, bis man zu diesem Punkt kommt.
+
+<img src="{{ site.baseurl }}/assets/grenzwert_def.png" alt="Folge mit Grenzwert">
+
+
+Das ist eine Folge mit Grenzwert 1. Ab einem gewissen N sind alle Folgeglieder weniger als Epsilon von 1 entfernt. Und egal wie klein dieses Epsilon ist, irgendwann sind alle nah genug dran. Wenn das Epsilon sehr klein ist, dauert es einfach etwas länger, bis man zu diesem Punkt kommt.
 
 
 <h3>Grenzwert vs. Häufungspunkt</h3>
@@ -130,7 +133,9 @@ $$ \lim_{n\rightarrow \infty} 1 = \lim_{n\rightarrow \infty} \frac{n}{n} = ( \li
 
 Naja, und da kommt nur falsches bei heraus. Deshalb:
 
-<img class="size-full wp-image-780 aligncenter" src="http://matheistkeinarschloch.de/wp-content/uploads/2016/10/meme_folgen.jpg" alt="Bei Grenzwertsätzen immer Konvergenz aller Teile prüfen" width="430" height="538" />
+<img src="{{ site.baseurl }}/assets/memes/meme_folgen.jpg" alt="Bei Grenzwertsätzen immer Konvergenz aller Teile prüfen">
+
+
 <h4>Grenzwertbestimmung durch Ausklammern</h4>
 Ein typisches Verfahren bei Folgen mit Brüchen ist das Ausklammern der höchsten Potenz und dann kürzen, hier ein Beispiel:
 

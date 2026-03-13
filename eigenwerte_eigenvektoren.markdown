@@ -36,7 +36,7 @@ Anschaulich erhält man durch eine Multiplikation von einer Matrix mit einem Vek
 
 Noch einmal kurz, damit es nicht vergessen wird: Eigenwerte und Eigenvektoren gibt es <strong>nur</strong> bei quadratischen Matrizen.
 
-Das klingt erstmal alles nicht besonders spannend, aber damit kann man ganz schön viel machen. Insbesondere kann man es mittels Eigenvektoren und Eigenwerten schaffen, eine Matrix auf Diagonalform zu bringen, dass die Matrix also nur aus Diagonaleinträgen besteht und ansonsten alle Einträge gleich Null sind. Das vereinfacht Berechnungen ungemein und wird im [Beitrag über Diagonalisierbarkeit]({% link diagonalisierbarkeit_matrix.markdown %}) erklärt. Schauen wir uns hier zunächst einmal die Eigenvektoren und Eigenwerte an sich an.
+Das klingt erstmal alles nicht besonders spannend, aber damit kann man ganz schön viel machen. Insbesondere kann man es mittels Eigenvektoren und Eigenwerten schaffen, eine Matrix auf Diagonalform zu bringen, dass die Matrix also nur aus Diagonaleinträgen besteht und ansonsten alle Einträge gleich Null sind. Das vereinfacht Berechnungen ungemein und wird im [Beitrag über Diagonalisierbarkeit]({{ "/diagonalisierbarkeit/" | relative_url }}) erklärt. Schauen wir uns hier zunächst einmal die Eigenvektoren und Eigenwerte an sich an.
 <h3>Berechnung von Eigenwerten</h3>
 Die Gleichung $Av=\lambda v$ ist recht schwer zu handhaben. Aber wir können sie ein wenig umformen, um sie etwas einfacher zu machen:
 
@@ -44,7 +44,7 @@ $$ \begin{align*} Av &= \lambda v \\ Av &= \lambda \mathbb{I}v \\ (A-\lambda \ma
 
 Wir haben nun einfach ein lineares Gleichungssystem, denn $A-\lambda \mathbb{I}$ ist auch einfach nur eine Matrix. $v$ ist ein unbekannter Vektor und wir suchen eine Lösung $v$ für das obige lineare Gleichungssystem. Naja, aber $\lambda$ ist ja auch unbekannt. Schlecht. Was machen wir nun?
 
-Wenn wir in Lineare Algebra ein bisschen aufgepasst haben, wissen wir genau, wann eine Gleichung $Ax = 0$ lösbar ist. Die Lösung $x=0$ geht natürlich immer. Aber wann gibt es noch andere Lösungen? Richtig, genau dann, wenn $A$ <strong>nicht</strong> [invertierbar]({% link invertierbare_matrizen.markdown %}) ist (oder äquivalent: wenn die Spalten von A [linear abhängig]({% link lineare_unabhaengigkeit.markdown %}) sind, denn sonst gäbe es ausschließlich die Triviallösung). Und was ist wiederum äquivalent dazu? Dass die Determinante von $A$ gleich Null ist! Also folgt:
+Wenn wir in Lineare Algebra ein bisschen aufgepasst haben, wissen wir genau, wann eine Gleichung $Ax = 0$ lösbar ist. Die Lösung $x=0$ geht natürlich immer. Aber wann gibt es noch andere Lösungen? Richtig, genau dann, wenn $A$ <strong>nicht</strong> [invertierbar]({{ "/invertierbare-matrizen-und-ihre-eigenschaften/" | relative_url }}) ist (oder äquivalent: wenn die Spalten von A [linear abhängig]({{ "/lineare-unabhaengigkeit/" | relative_url }}) sind, denn sonst gäbe es ausschließlich die Triviallösung). Und was ist wiederum äquivalent dazu? Dass die Determinante von $A$ gleich Null ist! Also folgt:
 
 Lösungen $v\neq 0$ für
 
