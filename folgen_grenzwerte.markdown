@@ -2,7 +2,7 @@
 layout: page
 title: Folgen und Grenzwerte
 nav: true
-permalink: /folgen-grenzwerte/
+permalink: /folgen-und-grenzwerte/
 ---
 
 

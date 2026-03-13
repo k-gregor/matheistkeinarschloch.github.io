@@ -2,7 +2,7 @@
 layout: page
 title: Invertierbare Matrizen und ihre Eigenschaften
 nav: true
-permalink: /invertierbare-matrizen-eigenschaften/
+permalink: /invertierbare-matrizen-und-ihre-eigenschaften/
 ---
 
 

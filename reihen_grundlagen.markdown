@@ -21,7 +21,7 @@ permalink: /reihen-grundlagen/
 
 
 <h2>Was ist eine Reihe?</h2>
-Eine Reihe ist im Wesentlichen eine Summe von Folgegliedern einer unendlichen [Folge]({{ "/folgen-grenzwerte/" | relative_url }}) $a_n$. Wir kennen ja alle die Folge $(\frac{1}{n})_{n\in \mathbb{N}}$, die entsprechende Reihe dazu wäre also die Summe der einzelnen Folgeglieder: $a_1 + a_2 + a_3 + \ldots$, also $1 + \frac{1}{2} + \frac{1}{3} + \ldots $
+Eine Reihe ist im Wesentlichen eine Summe von Folgegliedern einer unendlichen [Folge]({{ "/folgen-und-grenzwerte/" | relative_url }}) $a_n$. Wir kennen ja alle die Folge $(\frac{1}{n})_{n\in \mathbb{N}}$, die entsprechende Reihe dazu wäre also die Summe der einzelnen Folgeglieder: $a_1 + a_2 + a_3 + \ldots$, also $1 + \frac{1}{2} + \frac{1}{3} + \ldots $
 Dies schreibt man so auf:
 
 $$ S = \sum_{k=1}^\infty \frac{1}{k} $$
@@ -52,7 +52,7 @@ Wir addieren hier also unendlich viele Einsen auf. Das Ergebnis ist deshalb nat�
 Diese Summe geht springt immer hin und her, und wird dabei vom Betrag her größer. Sie geht allerdings nicht gegen $\infty$ oder $-\infty$ (sondern quasi gegen beides gleichzeitig)</li>
 </ol>
 <h2>Wann ist eine Reihe konvergent, und wann ist sie divergent?</h2>
-Damit wir überhaupt nur an Konvergenz denken können, muss die [Folge]({{ "/folgen-grenzwerte/" | relative_url }}), deren Glieder wir aufsummieren, schonmal eine Nullfolge sein, d.h. die Folgeglieder müssen gegen Null gehen. Denn nur dann werden die Summanden immer kleiner, bis sich der Gesamtwert der Reihe irgendwann so gut wie nicht mehr ändert. Aber das reicht erstaunlicherweise leider als Kriterium nicht aus! Denn es gibt Reihen, die Summanden aufaddieren, die gegen Null gehen, aber trotzdem divergent sind! Einfach, weil die Summanden nicht schnell genug gegen Null gehen!
+Damit wir überhaupt nur an Konvergenz denken können, muss die [Folge]({{ "/folgen-und-grenzwerte/" | relative_url }}), deren Glieder wir aufsummieren, schonmal eine Nullfolge sein, d.h. die Folgeglieder müssen gegen Null gehen. Denn nur dann werden die Summanden immer kleiner, bis sich der Gesamtwert der Reihe irgendwann so gut wie nicht mehr ändert. Aber das reicht erstaunlicherweise leider als Kriterium nicht aus! Denn es gibt Reihen, die Summanden aufaddieren, die gegen Null gehen, aber trotzdem divergent sind! Einfach, weil die Summanden nicht schnell genug gegen Null gehen!
 
 
 ### Die harmonische Reihe
@@ -67,7 +67,7 @@ Das klassische Beispiel dafür ist die <strong>harmonische Reihe</strong> $\sum 
 <img src="{{ site.baseurl }}/assets/reihe2-300x240.png" alt="Die Partialsummen dieser Reihe wachsen schnell kaum noch an, die Reihe konvergiert">
 
 
-Man sieht hier sehr schön, wie die Partialsummen von $\sum \frac{1}{n}$ immernoch sehr stark ansteigen, die Partialsummen von $\sum \frac{1}{n^2}$ aber schon sehr schnell kaum noch anwachsen. Obwohl beide Folgen recht schnell gegen Null gehen (die blauen Punkte), sodass wir in dieser Grafik eigentlich kaum einen Unterschied erkennen können, reicht dieser Unterschied aus, dass die eine Reihe konvergent ist und die andere divergent. Eine genauere mathematische Erklärung, warum die harmonische Reihe divergiert findet ihr in dem Artikel [Reihen (Konvergenzkriterien und Beispiele)]({{ "/reihen-konvergenzkriterien-beispiele/" | relative_url }})
+Man sieht hier sehr schön, wie die Partialsummen von $\sum \frac{1}{n}$ immernoch sehr stark ansteigen, die Partialsummen von $\sum \frac{1}{n^2}$ aber schon sehr schnell kaum noch anwachsen. Obwohl beide Folgen recht schnell gegen Null gehen (die blauen Punkte), sodass wir in dieser Grafik eigentlich kaum einen Unterschied erkennen können, reicht dieser Unterschied aus, dass die eine Reihe konvergent ist und die andere divergent. Eine genauere mathematische Erklärung, warum die harmonische Reihe divergiert findet ihr in dem Artikel [Reihen (Konvergenzkriterien und Beispiele)]({{ "/reihen-konvergenzkriterien-und-beispiele/" | relative_url }})
 
 
 <img src="{{ site.baseurl }}/assets/memes/meme_harmonicseries.jpg" alt="Meme">
@@ -75,7 +75,7 @@ Man sieht hier sehr schön, wie die Partialsummen von $\sum \frac{1}{n}$ immerno
 
 Das geschulte Auge wird von dem Bild der Reihe $\sum \frac{1}{n}$ an den Logarithmus erinnert, welcher zwar auch immer schwächer steigt, aber eben doch immer weiter ansteigt, bis $\infty$.
 <h2>Kriterien, um zu bestimmen ob eine Reihe konvergent oder divergent ist</h2>
-Es gibt einige Kriterien, mit denen man Reihen auf Konvergenz prüfen kann, diese findet ihr in folgendem Artikel: [Reihen (Konvergenzkriterien und Beispiele)]({{ "/reihen-konvergenzkriterien-beispiele/" | relative_url }})
+Es gibt einige Kriterien, mit denen man Reihen auf Konvergenz prüfen kann, diese findet ihr in folgendem Artikel: [Reihen (Konvergenzkriterien und Beispiele)]({{ "/reihen-konvergenzkriterien-und-beispiele/" | relative_url }})
 
 
 

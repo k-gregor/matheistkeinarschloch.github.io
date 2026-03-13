@@ -2,7 +2,7 @@
 layout: page
 title: Reihen (Konvergenzkriterien und Beispiele)
 nav: true
-permalink: /reihen-konvergenzkriterien-beispiele/
+permalink: /reihen-konvergenzkriterien-und-beispiele/
 ---
 
 
@@ -119,7 +119,7 @@ $\sum_{n=0}^\infty \frac{3^n}{2^{2n}} $ konvergiert, denn
 
 $$ \sqrt[n]{\frac{3^n}{2^{2n}}} = \frac{3}{4} < 1 $$
 <h3>Warum braucht man beim Wurzelkriterium den Limes Superior?</h3>
-Schauen wir uns kurz die zweite Beschreibung des Kriteriums mit dem Limes Superior $\limsup$ an. Der Limes Superior beschreibt den größten Häufungspunkt (siehe Artikel zu [Folgen und Grenzwerten]({{ "/folgen-grenzwerte/" | relative_url }})) einer Folge. Also zum Beispiel ist $\limsup_{n\rightarrow \infty} (-1)^n = 1$. Die Folge hat die zwei Häufungspunkte $1$ und $-1$, und der größte davon ist offensichtlich $1$.
+Schauen wir uns kurz die zweite Beschreibung des Kriteriums mit dem Limes Superior $\limsup$ an. Der Limes Superior beschreibt den größten Häufungspunkt (siehe Artikel zu [Folgen und Grenzwerten]({{ "/folgen-und-grenzwerte/" | relative_url }})) einer Folge. Also zum Beispiel ist $\limsup_{n\rightarrow \infty} (-1)^n = 1$. Die Folge hat die zwei Häufungspunkte $1$ und $-1$, und der größte davon ist offensichtlich $1$.
 
 Was bringt uns das hier? Naja, schauen wir uns die Folge
 

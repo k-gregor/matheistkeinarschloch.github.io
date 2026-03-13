@@ -29,6 +29,7 @@ url: "https://matheistkeinarschloch.de" # the base hostname & protocol for your 
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 navigation:
   - title: Lineare Algebra
@@ -36,29 +37,29 @@ navigation:
       - title: Gruppen, Ringe, Körper
         url: /gruppen-ringe-koerper/
       - title: Induktion (Beweismethode)
-        url: /induktion-beweismethode/
+        url: /induktion/
       - title: Lineare Unabhängigkeit
         url: /lineare-unabhaengigkeit/
       - title: Eigenwerte und Eigenvektoren
-        url: /eigenwerte-eigenvektoren/
+        url: /eigenwert-und-eigenvektoren/
       - title: Invertierbare Matrizen und ihre Eigenschaften
-        url: /invertierbare-matrizen-eigenschaften/
+        url: /invertierbare-matrizen-und-ihre-eigenschaften/
       - title: Diagonalisierbarkeit von Matrizen
-        url: /diagonalisierbarkeit-matrix/
+        url: /diagonalisierbarkeit-von-matrizen/
   - title: Analysis
     subitems:
       - title: Folgen und Grenzwerte
-        url: /folgen-grenzwerte/
+        url: /folgen-und-grenzwerte/
       - title: Reihen - Grundlagen
         url: /reihen-grundlagen/
       - title: Reihen - Konvergenzkriterien und Beispiele
-        url: /reihen-konvergenzkriterien-beispiele/
+        url: /reihen-konvergenzkriterien-und-beispiele/
       - title: Die injektive, surjektive, bijektive Kneipenprügelei
         url: /die-injektive-surjektive-bijektive-kneipenpruegelei/
       - title: Monotonie
-        url: /monotonie-von-funktionen/
+        url: /monotonie/
       - title: Stetigkeit
-        url: /stetigkeit-von-funktionen/
+        url: /stetigkeit/
       - title: Taylor-Polynome
         url: /taylor-polynome/
       - title: Polarkoordinaten
@@ -76,21 +77,21 @@ navigation:
   - title: Statistik
     subitems:
       - title: Binomialtest
-        url: binomialtest
+        url: /binomialtest/
       - title: Chi-Quadrat-Test
-        url: chi-quadrat-test
+        url: /chi-quadrat-test/
       - title: T-Test (zwei Stichproben)
-        url: zwei-stichproben-t-test
+        url: /t-test-zwei-stichproben/
   - title: Über diese Seite
     subitems:
       - title: Über mich
-        url: ueber-mich
+        url: /ueber-mich/
       - title: Datenschutzerklärung
-        url: datenschutz
+        url: /datenschutz/
       - title: Haftungsausschluss
-        url: haftungsausschluss
+        url: /haftungsausschluss/
       - title: Impressum
-        url: impressum
+        url: /impressum/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

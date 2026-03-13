@@ -2,7 +2,7 @@
 layout: page
 title: Induktion (Beweismethode)
 nav: true
-permalink: /induktion-beweismethode/
+permalink: /induktion/
 ---
 
 

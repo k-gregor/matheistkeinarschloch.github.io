@@ -2,7 +2,7 @@
 layout: page
 title: Diagonalisierbarkeit von Matrizen
 nav: true
-permalink: /diagonalisierbarkeit-matrix/
+permalink: /diagonalisierbarkeit-von-matrizen/
 ---
 
 
@@ -43,7 +43,7 @@ $D^5$ können wir ganz leicht bestimmen, und dann müssen wir nur noch zwei Matr
 
 # Wie kann man eine Matrix diagonalisieren? Allgemeine Erklärung
 
-Wann kann man nun eine Matrix $A \in \mathbb{R}^n$ diagonalisieren? Wenn wir $n$ [linear unabhängige]({{ "/lineare-unabhaengigkeit/" | relative_url }}) Eigenvektoren finden! Wir erinnern uns, $v$ ist ein Eigenvektor zu $A$, wenn $Av = \lambda v$ für ein $\lambda \in \mathbb{R}$, ein so genannter Eigenwert (das kannst du im [Beitrag über Eigenwerte und -vektoren]({{ "/eigenwerte-eigenvektoren/" | relative_url }}) nochmal nachlesen). Wenn wir nun $n$ unabhängige Eigenvektoren $v_1, v_2, \ldots, v_n$ haben, können wir diese hintereinander zu einer Matrix $U$ schreiben, welche aufgrund der linearen Unabhängigkeit der Spalten invertierbar ist:
+Wann kann man nun eine Matrix $A \in \mathbb{R}^n$ diagonalisieren? Wenn wir $n$ [linear unabhängige]({{ "/lineare-unabhaengigkeit/" | relative_url }}) Eigenvektoren finden! Wir erinnern uns, $v$ ist ein Eigenvektor zu $A$, wenn $Av = \lambda v$ für ein $\lambda \in \mathbb{R}$, ein so genannter Eigenwert (das kannst du im [Beitrag über Eigenwerte und -vektoren]({{ "/eigenwert-und-eigenvektoren/" | relative_url }}) nochmal nachlesen). Wenn wir nun $n$ unabhängige Eigenvektoren $v_1, v_2, \ldots, v_n$ haben, können wir diese hintereinander zu einer Matrix $U$ schreiben, welche aufgrund der linearen Unabhängigkeit der Spalten invertierbar ist:
 
 $$ U = \left( \begin{array}{c|c|c|c} v_1 & v_2 & \cdots & v_n \end{array} \right) $$
 
@@ -61,7 +61,7 @@ Wir haben also unsere Transformationsmatrix $U$ und unsere Diagonalmatrix $D$ ge
 
 # Wie kann man eine Matrix diagonalisieren? Erklärung am Beispiel
 
-Wenn wir also eine Matrix $A$ diagonalisieren wollen - bzw. schauen, ob es überhaupt geht - dann müssen wir offensichtlich die [Eigenwerte und Eigenvektoren]({{ "/eigenwerte-eigenvektoren/" | relative_url }}) bestimmen. Wenn dann <strong>zu jeden Eigenwert die geometrische Vielfachheit gleich der algebraischen Vielfachheit</strong> ist, bedeutet dass, dass wir $n$ linear unabhängige Eigenvektoren gefunden haben, denn dann haben wir für jeden $k$-fachen Eigenwert auch $k$ linear unabhängige Eigenvektoren. Zusätzlich sind Eigenvektoren zu unterschiedlichen Eigenwerten immer zueinander linear unabhängig!
+Wenn wir also eine Matrix $A$ diagonalisieren wollen - bzw. schauen, ob es überhaupt geht - dann müssen wir offensichtlich die [Eigenwerte und Eigenvektoren]({{ "/eigenwert-und-eigenvektoren/" | relative_url }}) bestimmen. Wenn dann <strong>zu jeden Eigenwert die geometrische Vielfachheit gleich der algebraischen Vielfachheit</strong> ist, bedeutet dass, dass wir $n$ linear unabhängige Eigenvektoren gefunden haben, denn dann haben wir für jeden $k$-fachen Eigenwert auch $k$ linear unabhängige Eigenvektoren. Zusätzlich sind Eigenvektoren zu unterschiedlichen Eigenwerten immer zueinander linear unabhängig!
 
 Gegeben sei die Matrix
 
@@ -97,15 +97,15 @@ Für die Matrix
 
 $$ A = \begin{pmatrix} -2 &-4 & 2 \\ -2 & -4 & -3 \\ 1 & 2 & -2 \end{pmatrix} $$
 
-hatten wir auf der Erklärungsseite für [Eigenwerte und Eigenvektoren]({{ "/eigenwerte-eigenvektoren/" | relative_url }}) bereits berechnet, dass die Eigenwerte lauten: $\lambda_1 = 0$ mit geometrischer und arithmetischer Vielfachheit 1, und $\lambda_2 = -4$ mit arithmetischer Vielfachheit 2 aber geometrischer Vielfachheit 1. $A$ ist also nicht diagonalisierbar.
+hatten wir auf der Erklärungsseite für [Eigenwerte und Eigenvektoren]({{ "/eigenwert-und-eigenvektoren/" | relative_url }}) bereits berechnet, dass die Eigenwerte lauten: $\lambda_1 = 0$ mit geometrischer und arithmetischer Vielfachheit 1, und $\lambda_2 = -4$ mit arithmetischer Vielfachheit 2 aber geometrischer Vielfachheit 1. $A$ ist also nicht diagonalisierbar.
 
 <h2>Diagonalisierbarkeit heißt nicht gleich Invertierbarkeit!</h2>
 
-Abschließend möchte ich noch zwei Beispiele bringen, die die Zusammengehörigkeit von [Invertierbarkeit]({{ "/invertierbare-matrizen-eigenschaften/" | relative_url }}) und Diagonalisierbarkeit widerlegen. Studenten sagen in Prüfungen gerne mal das das eine das andere impliziert oder umgekehrt, aber das ist schlicht falsch.
+Abschließend möchte ich noch zwei Beispiele bringen, die die Zusammengehörigkeit von [Invertierbarkeit]({{ "/invertierbare-matrizen-und-ihre-eigenschaften/" | relative_url }}) und Diagonalisierbarkeit widerlegen. Studenten sagen in Prüfungen gerne mal das das eine das andere impliziert oder umgekehrt, aber das ist schlicht falsch.
 
 <h3>Diagonalisierbarkeit impliziert nicht Invertierbarkeit</h3>
 
-Auch wenn Diagonalisierbarkeit einer Matrix eine ziemlich starke Eigenschaft ist, muss die Matrix deshalb nicht [invertierbar]({{ "/invertierbare-matrizen-eigenschaften/" | relative_url }}) sein. Die folgende Matrix ist beispielsweise diagonalisierbar (denn sie ist bereits diagonal), ist aber nicht invertierbar, denn es steht eine Null auf der Diagonalen (also ist ein Eigenwert Null bzw die Determinante ist Null)
+Auch wenn Diagonalisierbarkeit einer Matrix eine ziemlich starke Eigenschaft ist, muss die Matrix deshalb nicht [invertierbar]({{ "/invertierbare-matrizen-und-ihre-eigenschaften/" | relative_url }}) sein. Die folgende Matrix ist beispielsweise diagonalisierbar (denn sie ist bereits diagonal), ist aber nicht invertierbar, denn es steht eine Null auf der Diagonalen (also ist ein Eigenwert Null bzw die Determinante ist Null)
 
 $$ A = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix} $$
 <h3>Invertierbarkeit impliziert nicht Diagonalisierbarkeit</h3>
@@ -113,7 +113,7 @@ Auch andersrum geht es nicht: Nehmen wir beispielsweise die Matrix
 
 $$ A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} $$
 
-die offenbar [invertierbar]({{ "/invertierbare-matrizen-eigenschaften/" | relative_url }}) ist, da ihre Determinante 1 ist. Damit sie diagonalisierbar ist, müssten die geometrischen Vielfachheiten der Eigenwerte gleich der algebraischen Vielfachheiten derselben sein. Das charakteristische Polynom ist:
+die offenbar [invertierbar]({{ "/invertierbare-matrizen-und-ihre-eigenschaften/" | relative_url }}) ist, da ihre Determinante 1 ist. Damit sie diagonalisierbar ist, müssten die geometrischen Vielfachheiten der Eigenwerte gleich der algebraischen Vielfachheiten derselben sein. Das charakteristische Polynom ist:
 
 $$ det(\begin{pmatrix} 1-\lambda & 1 \\ 0 & 1-\lambda \end{pmatrix}) = (1-\lambda)(1-\lambda) \stackrel{!}{=}0 $$
 

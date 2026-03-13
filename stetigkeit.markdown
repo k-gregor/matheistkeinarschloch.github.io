@@ -2,7 +2,7 @@
 layout: page
 title: Stetigkeit von Funktionen
 nav: true
-permalink: /stetigkeit-von-funktionen/
+permalink: /stetigkeit/
 ---
 
 

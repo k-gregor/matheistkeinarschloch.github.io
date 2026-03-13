@@ -2,7 +2,7 @@
 layout: page
 title: Eigenwerte und Eigenvektoren
 nav: true
-permalink: /eigenwerte-eigenvektoren/
+permalink: /eigenwert-und-eigenvektoren/
 ---
 
 

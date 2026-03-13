@@ -2,7 +2,7 @@
 layout: page
 title: t-Test (zwei Stichproben)
 nav: true
-permalink: /zwei-stichproben-t-test/
+permalink: /t-test-zwei-stichproben/
 ---
 
 
