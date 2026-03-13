@@ -10,11 +10,16 @@
   object-fit: cover;
 }
 
-/* Main nav adjustments */
-.site-nav ul {
+.site-nav ul{
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown {
+  margin: 0px;
+  padding: 0px;
+  line-height: 30px;
 }
 
 .site-nav li {
@@ -68,9 +73,15 @@
   user-select: none;
 }
 
+.site-header {
+  line-height: 30px;
+  min-height: 30px;
+}
+
 .site-nav {
   position: relative;      /* ensure z-index works */
   z-index: 2000;           /* above the graph canvas */
+  line-height: 30px;
 }
 
 .dropdown-content {
