@@ -147,7 +147,7 @@ $$\mathcal{L}(x,y,\lambda) = 2x^2 + 4xy + 4y + \lambda(x^2 -y -6) $$
 
 $$ \nabla \mathcal{L}(x,y,\lambda) = \begin{pmatrix} 4x +4y +2\lambda x \\ 4x +4 - \lambda \\ x^2 -y -6 \end{pmatrix} $$
 
-Dies wird Null gesetzt, und man bekommt z.B. heraus, dass $y = x^2 -6$ und $\lambda = 4x + 4$. Dies wieder in die erste Zeile eingesetzt ergibt $ x_1 = 1, y_1 = -5, \lambda_1 = 5, f(x_1, y_1) = -38 $ und $x_2 = -2, y_2 = -2, \lambda_2 = -4, f(x_2, y_2) = 64 $.
+Dies wird Null gesetzt, und man bekommt z.B. heraus, dass $y = x^2 -6$ und $\lambda = 4x + 4$. Dies wieder in die erste Zeile eingesetzt ergibt $ x_1 = 1, y_1 = -5, \lambda_1 = 8, f(x_1, y_1) = -38 $ und $x_2 = -2, y_2 = -2, \lambda_2 = -4, f(x_2, y_2) = 64 $.
 <h5>Zu 8.2</h5>
 Die geränderte Hessematrix ist
 
