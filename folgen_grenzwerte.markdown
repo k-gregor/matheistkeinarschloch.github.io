@@ -3,6 +3,7 @@ layout: page
 title: Folgen und Grenzwerte
 nav: true
 permalink: /folgen-und-grenzwerte/
+description: Erklärungen von Folgen, Konvergenz, Divergenz und Bestimmen von Grenzwerten. Mit Rechenregeln, Grenzwertsätzen, Übungen und Beispielen.
 ---
 
 

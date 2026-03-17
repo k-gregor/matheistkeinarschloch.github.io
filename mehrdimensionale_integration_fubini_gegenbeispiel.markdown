@@ -3,6 +3,7 @@ layout: page
 title: Gegenbeispiel zum Satz von Fubini
 nav: true
 permalink: /mehrdimensionale-integrale-gegenbeispiel-zum-satz-von-fubini/
+description: Ein Beispiel wo der Satz von Fubini nicht anwendbar ist.
 ---
 
 <script type="text/javascript" id="MathJax-script" async

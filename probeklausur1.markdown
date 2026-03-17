@@ -3,6 +3,7 @@ layout: page
 title: Probeklausur1 (LinAlg und Analysis)
 nav: true
 permalink: /probeklausur1/
+description: Eine Probeklausur zu den zentralen Themen der Linearen Algebra und Analysis, mit Lösungen.
 ---
 
 

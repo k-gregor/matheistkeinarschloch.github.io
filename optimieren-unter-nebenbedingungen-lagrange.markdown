@@ -3,6 +3,7 @@ layout: page
 title: Optimieren unter Nebenbedingungen (Lagrange)
 nav: true
 permalink: /optimieren-unter-nebenbedingungen-lagrange/
+description: Die Lagrange-Methode zur Optimierung mit Nebenbedingungen wird hier ganz anschaulich mit 3D-Visualisierungen erklärt.
 ---
 
 <script type="text/javascript" id="MathJax-script" async

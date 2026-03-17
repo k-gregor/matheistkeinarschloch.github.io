@@ -3,6 +3,7 @@ layout: page
 title: Polarkoordinaten
 nav: true
 permalink: /polarkoordinaten/
+description: Was sind Polarkoordinaten? Wozu braucht man sie? Und wie berechnet man sie? All das wird hier ausführlich erklärt.
 ---
 
 

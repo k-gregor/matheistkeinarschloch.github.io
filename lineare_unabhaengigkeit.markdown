@@ -3,6 +3,7 @@ layout: page
 title: Lineare Unabhängigkeit
 nav: true
 permalink: /lineare-unabhaengigkeit/
+description: Was heißt denn eigentlich genau linear unabhängig bzw. abhängig? Hier wird es mit 3D-Visualisierungen und Beispielen anschaulich erklärt.
 ---
 
 <script type="text/javascript" id="MathJax-script" async

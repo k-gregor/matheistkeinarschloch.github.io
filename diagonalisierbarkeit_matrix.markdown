@@ -3,6 +3,7 @@ layout: page
 title: Diagonalisierbarkeit von Matrizen
 nav: true
 permalink: /diagonalisierbarkeit-von-matrizen/
+description: Was ist eine diagonale Matrix? Wie diagonalisiert man eine Matrix? Was bringt das? All das wird hier verständlich und mit Beispielen erklärt.
 ---
 
 

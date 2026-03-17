@@ -3,6 +3,7 @@ layout: page
 title: Die injektive, surjektive, bijektive Kneipenprügelei
 nav: true
 permalink: /die-injektive-surjektive-bijektive-kneipenpruegelei/
+description: Injektiv? Surjektiv? Bijektiv? Das wird hier anhand einer Schlägerei anschaulich erklärt!
 ---
 
 

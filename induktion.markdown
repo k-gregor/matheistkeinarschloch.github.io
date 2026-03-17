@@ -3,6 +3,7 @@ layout: page
 title: Induktion (Beweismethode)
 nav: true
 permalink: /induktion/
+description: Eine verständliche Erklärung der Beweisführung via vollständiger Induktion.
 ---
 
 

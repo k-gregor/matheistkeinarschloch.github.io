@@ -3,6 +3,7 @@ layout: page
 title: Mehrdimensionale Integration
 nav: true
 permalink: /mehrdimensionale-integration/
+description: Integrieren im Mehrdimensionalen wird hier anschaulich mit 3D-Visualisierungen, Beispielen und Übungsaufgaben erklärt.
 ---
 
 <script type="text/javascript" id="MathJax-script" async

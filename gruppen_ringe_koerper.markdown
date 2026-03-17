@@ -3,6 +3,7 @@ layout: page
 title: Gruppen, Ringe, Körper
 nav: true
 permalink: /gruppen-ringe-koerper/
+description: Erklärung der algebraischen Strukturen Gruppen, Ringe, Körper mit vielen Beispielen.
 ---
 
 

@@ -3,6 +3,7 @@ layout: page
 title: Stetigkeit von Funktionen
 nav: true
 permalink: /stetigkeit/
+description: Hier wird das Konzept Stetigkeit von Funktionen anhand des Beispiels einer Dusche und ganz vielen Beispielen ganz einfach erklärt!
 ---
 
 

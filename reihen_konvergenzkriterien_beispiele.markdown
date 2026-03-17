@@ -3,6 +3,7 @@ layout: page
 title: Reihen (Konvergenzkriterien und Beispiele)
 nav: true
 permalink: /reihen-konvergenzkriterien-und-beispiele/
+description: Hier gibt es viele Beispiele zu allen Konvergenzkriterien von Reihen!
 ---
 
 

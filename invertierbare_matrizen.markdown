@@ -3,6 +3,7 @@ layout: page
 title: Invertierbare Matrizen und ihre Eigenschaften
 nav: true
 permalink: /invertierbare-matrizen-und-ihre-eigenschaften/
+description: Welche Eigenschaften gelten für invertierbare Matrizen? Und welche nicht? Hier gibt es ganz viele Beispiele.
 ---
 
 

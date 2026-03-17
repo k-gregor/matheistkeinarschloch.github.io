@@ -3,6 +3,7 @@ layout: page
 title: Mehrdimensionales Ableiten
 nav: true
 permalink: /mehrdimensionales-ableiten/
+description: Ableiten im Mehrdimensionalen, Richtungsableitung und Totales Differential wird hier mit 3D-Visualisierungen, Beispielen und Übungsaufgaben erklärt.
 ---
 
 <script type="text/javascript" id="MathJax-script" async

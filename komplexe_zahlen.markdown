@@ -3,6 +3,7 @@ layout: page
 title: Komplexe Zahlen (Grundlagen)
 nav: true
 permalink: /komplexe-zahlen-grundlagen/
+description: Was sind denn komplexe Zahlen? Wofür sind sie da? Hier werden sie ganz detailliert und einfach erklärt.
 ---
 
 

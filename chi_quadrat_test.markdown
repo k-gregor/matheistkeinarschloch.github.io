@@ -3,6 +3,7 @@ layout: page
 title: Chi-Quadrat-Test
 nav: true
 permalink: /chi-quadrat-test/
+description: Hier zeige ich euch anhand von anschaulichen Beispielen, wie der Chi-Quadrat-Anpassungstest funktioniert.
 ---
 
 

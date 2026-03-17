@@ -3,6 +3,7 @@ layout: page
 title: Taylor-Polynome
 nav: true
 permalink: /taylor-polynome/
+description: Was sind Taylor-Polynome? Was ist das Taylor-Polynom eines Polynoms? Hier wird es mit vielen Beispielen anschaulich erklärt!
 ---
 
 

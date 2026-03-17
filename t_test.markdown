@@ -3,6 +3,7 @@ layout: page
 title: t-Test (zwei Stichproben)
 nav: true
 permalink: /t-test-zwei-stichproben/
+description: Hier wird der zwei-Stichproben t-test anhand eines klaren Beispiels anschaulich erklärt.
 ---
 
 

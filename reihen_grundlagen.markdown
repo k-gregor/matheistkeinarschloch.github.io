@@ -3,6 +3,7 @@ layout: page
 title: Reihen (Grundlagen)
 nav: true
 permalink: /reihen-grundlagen/
+description: Hier werden Reihen verständlich erklärt. Was ist eine Reihe? Wann ist sie konvergent, wann divergent? Außerdem zeigen wir die wichtigsten Beispiele für Reihen.
 ---
 
 

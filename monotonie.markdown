@@ -3,6 +3,7 @@ layout: page
 title: Monotonie von Funktionen
 nav: true
 permalink: /monotonie/
+description: Monotonie von Funktionen wird hier anhand vieler Beispiele erklärt.
 ---
 
 

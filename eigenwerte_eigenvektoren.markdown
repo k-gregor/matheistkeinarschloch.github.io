@@ -3,6 +3,7 @@ layout: page
 title: Eigenwerte und Eigenvektoren
 nav: true
 permalink: /eigenwert-und-eigenvektoren/
+description: Was sind Eigenvektoren und Eigenwerte? Was kann damit machen? Wie berechnet man sie? Hier wird es erklärt mit vielen Beispielen
 ---
 
 

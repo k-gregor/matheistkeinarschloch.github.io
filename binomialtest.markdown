@@ -2,6 +2,7 @@
 layout: page
 title: Binomialtest
 nav: true
+description: "Einfache Erklärung zur Funktionsweise des Binomialtests: Wie funktioniert er, wann wendet man ihn an? Mit Beispielen und Übungsaufgaben."
 permalink: /binomialtest/
 ---
 
