@@ -126,7 +126,7 @@ Was bringt uns das hier? Naja, schauen wir uns die Folge
 
 $$ a_n = \begin{cases} (\frac{1}{4})^n & \mbox{n gerade} \\  (\frac{1}{2})^n & \mbox{n ungerade} \end{cases} $$
 
-und die dazugehörige Reihe $\sum a_n$ an. Ist die Reihe konvergent? Das können wir mit dem Wurzelkriterium zeigen (mit beiden Arten, aber hier exemplarisch mit dem Limes Superior). Also, die Folge $\sqrt[n]{|a_n|}$ ist einfach:
+und die dazugehörige Reihe $\sum a_n$ an. Ist die Reihe konvergent? Das können wir mit dem Wurzelkriterium zeigen (mit beiden Arten, aber hier exemplarisch mit dem Limes Superior). Also, die Folge $\sqrt[n]{\|a_n\|}$ ist einfach:
 
 $$ \sqrt[n]{|a_n|} = \begin{cases} \frac{1}{4} & \mbox{n gerade} \\  \frac{1}{2} & \mbox{n ungerade} \end{cases} $$
 
