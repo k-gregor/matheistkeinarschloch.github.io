@@ -21,6 +21,8 @@ description: Hier gibt es viele Beispiele zu allen Konvergenzkriterien von Reihe
 </script>
 
 
+<img src="https://vg08.met.vgwort.de/na/2a64ad51d1684f68aaefb13501671b9f" width="1" height="1" alt="">
+
 Im Artikel [Grundlagen von Reihen]({{ "/reihen-grundlagen/" | relative_url }}) haben wir bereits einiges über Konvergenz und Divergenz von Reihen gelernt. Nun soll es um die Kriterien gehen, anhand derer man Reihen auf Konvergenz oder Divergenz prüfen kann. Ich will sie euch im folgenden vorstellen.
 <h2>Nullfolgenkriterium</h2>
 Das Nullfolgenkriterium ist das grundlegendste Kriterium. Es besagt:
